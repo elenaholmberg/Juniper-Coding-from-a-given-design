@@ -6,3 +6,9 @@
 @import './_layout.scss';
 @import './_spacing.scss';
 @import './_responsive.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

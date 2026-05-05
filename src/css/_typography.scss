@@ -1,17 +1,16 @@
 //------Desktop-------//
 
 //Heading 1
-.playfair-display-uniquifier {
+.heading-1 {
   font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 3.125rem; //50px
-
   font-style: normal;
 }
 
 //Heading 2
-.playfair-display-uniquifier {
+.heading-2 {
   font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -20,7 +19,7 @@
 }
 
 //Heading 3
-.playfair-display-uniquifier {
+.heading-3 {
   font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -29,7 +28,9 @@
 }
 
 //Heading 4,5,6
-.playfair-display-uniquifier {
+.heading-4,
+.heading-5,
+.heading-6 {
   font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -38,7 +39,7 @@
 }
 
 //Body Text, Navigation & Footer body
-.open-sans-uniquifier {
+.body-nav-foot-text {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -48,7 +49,7 @@
 }
 
 //Navigation & Footer body(HOVER)
-.open-sans-uniquifier {
+.body-nav-foot-text:hover {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -58,7 +59,7 @@
 }
 
 //Footer heading
-.open-sans-uniquifier {
+.footer-heading {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;

@@ -1,0 +1,44 @@
+// ====================
+// Hero
+// ====================
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 250px;
+  left: 420px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.heading-1 {
+  color: #12365c;
+  text-align: center;
+  width: 640px;
+  height: 225px;
+  margin: 0 auto;
+}
+.body-nav-foot-text {
+  width: 700px;
+  height: 154px;
+  text-align: center;
+  color: #12365c;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 1.25rem; //20px
+  margin: 0 auto;
+}
+
+.line {
+  margin: 0 auto;
+  width: 203px;
+  height: 2px;
+  background: #12365c;
+  margin-bottom: 20px;
+}

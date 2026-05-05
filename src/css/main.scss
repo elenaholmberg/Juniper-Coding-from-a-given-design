@@ -6,4 +6,10 @@
 @import './_layout.scss';
 @import './_spacing.scss';
 @import './_responsive.scss';
-@import './hero.scss';
+@import './_newsletter.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}

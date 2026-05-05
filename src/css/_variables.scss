@@ -1,22 +1,23 @@
-//variables
-
-//primary colors
-&primary {
-  --summer-haze: #FFFFF;
+:root {
+      
+  // ====================
+  // Primary colors
+  // ====================
+  --summer-haze: #FFFFFF;
   --blueberry: #12365C;
-}
 
-//secondary colors
-&secondary {
+  // ====================
+  // Secondary colors
+  // ====================
   --sea-breeze: #C3DBF5;
   --strawberry-icecream: #FFD6DF;
   --blueberry-purree: #66000F;
   --warm-elder: #FFF1CD;
   --honey-gold: #735711;
-}
 
-//gradient colors
-&gradient {
+  // ====================
+  // Gradients
+  // ====================
   --yellow-gradient: linear-gradient(45deg, #FFF1CD, #FFF6DF);
   --pink-gradient: linear-gradient(45deg, #FFD6DF, #FFE7EA);
 }

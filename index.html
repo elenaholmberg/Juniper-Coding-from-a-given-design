@@ -1,223 +1,258 @@
 <!doctype html>
 <html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juniper</title>
+    <link rel="stylesheet" href="/src/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juniper</title>
-  <link rel="stylesheet" href="/src/main.scss" />
-</head>
+  <body>
+    <!-- ================= HEADER START ================= -->
+    <header>
+      <nav>
+        <ul class="nav-links nav-links--left">
+          <li><a href="#craft">Vårt hantverk</a></li>
+          <li><a href="#news">Kontakta oss</a></li>
+        </ul>
 
-<body>
+        <a href="#hero" class="nav-logo">
+          <img src="img/svg/Juniper-logo-mörkblå.svg" alt="Juniper" />
+        </a>
 
-  <!-- ================= HEADER START ================= -->
-  <header>
-    <nav>
-      <ul class="nav-links nav-links--left">
-        <li><a href="#craft">Vårt hantverk</a></li>
-        <li><a href="#news">Kontakta oss</a></li>
-      </ul>
-
-      <a href="#hero" class="nav-logo">
-        <img src="img/svg/Juniper-logo-mörkblå.svg" alt="Juniper">
-      </a>
-
-      <ul class="nav-links nav-links--right">
-        <li><a href="#inspiration">Inspiration</a></li>
-        <li><a href="#stores">Hitta oss</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- ================= HEADER END ================= -->
-
-
-  <!-- ================= MAIN START ================= -->
-  <main>
-
-    <!-- ===== HERO START  ===== -->
-    <section id="hero" class="hero">
-      <div class="hero-text">
-        <h1>JUNIPER<br>FÖR SVENSKA
-          SOMMARKVÄLLAR</h1>
-        <p>INSPIRERAD AV NATUREN<br>SKAPAD FÖR STUNDER SOM STANNAR KVAR </p>
-      </div>
-      <img src="img/png/Main-hero-header-bild.png" alt="Juniper flaskor">
-    </section>
-    <!-- ===== HERO END ===== -->
-
-
-    <!-- ===== SECTION 1 START  ===== -->
-    <section id="craft" class="craft">
-      <img src="img/png/Hantverksbild.png" alt="Juniper flaskor med destilleringsutrustning">
-
-      <div class="craft-text">
-        <h2>Hantverk</h2>
-        <p>
-          Varje flaska utformas med naturen som inspiration.
-          Nordiska råvaror plockas när de är som mest aromrika och förädlas varsamt för att bevara sin rena karaktär.
-          Genom långsam destillering och noggrant utvald infusering fångas essensen av bär och blommor i en alkoholfri
-          botanisk upplevelse med djup och balans.
-          Inga genvägar, inga onödiga tillsatser, bara rena råvaror som lyfts till sin mest eleganta form.
-        </p>
-        <button>Vår historia</button>
-      </div>
-      <img src="img/svg/Fläder-illustration.svg" alt="" aria-hidden="true" class="decor decor--craft">
-
-    </section>
-    <!-- ===== SECTION 1 END ===== -->
-
-
-    <!-- ===== SECTION 2 START  ===== -->
-    <section id="news" class="news">
-      <h2>Sommarens nyheter</h2>
-
-      <div class="product-grid">
-        <article>
-          <img src="img/png/Flaska-blåbärsblom.png" alt="Juniper Blåbärsblom flaska">
-          <h3>Blåbärsblom</h3>
-          <p>Blåbärsblom har en klar och sval ton med en subtil bärighet som ger djup och tydlighet. Smaken är krispig,
-            modern och stilren, en lugn blå nyans i smakform med ett stilla och självsäkert uttryck.
-             </p>
-        </article>
-
-        <article>
-          <img src="img/png/Flaska-Smultron.png" alt="Juniper Smultron flaska">
-          <h3>Smultron</h3>
-          <p>Smultronessensen är mjuk och bärig med en naturlig, varm rundhet. Den har en len och följsam karaktär som
-            dröjer sig kvar och skapar en harmonisk bärprofil med mjukt djup.</p>
-        </article>
-
-        <article>
-          <img src="img/png/Flaska-Fläder.png" alt="Juniper Fläder flaska">
-          <h3>Fläder</h3>
-          <p>Fläder har en elegant, floralt skimrande ton med en mild och naturlig mjukhet. Smaken är ljus, fräsch och
-            väl avvägd, ett tidlöst, nordiskt blomuttryck med förfinad elegans.</p>
-        </article>
-      </div>
-    </section>
-    <!-- ===== SECTION 2 END ===== -->
-
-
-    <!-- ===== SECTION 3 START  ===== -->
-    <section id="inspiration" class="inspiration">
-      <h2>Hitta inspiration</h2>
-
-      <img src="img/svg/Blåbär-illustration.svg" alt="" aria-hidden="true" class="decor decor--craft">
-
-      <article>
-        <img src="img/png/Blåbärsour-drink.png" alt="Juniper Blåbär Sour">
-        <h3>Blåbär Sour</h3>
-        <p>En frisk och somrig blåbärsdrink med balanserad syra från citron, mjuk sötma och en lätt botanisk ton. Len,
-          bärig och uppfriskande, med ett fint skum på toppen som ger en lyxig känsla.</p>
-        <button>Läs mer</button>
-      </article>
-
-      <article>
-        <img src="img/png/Smultron-Spritz-drink.png" alt="Juniper Smultron Spritz">
-        <h3>Smultron Spritz</h3>
-        <p>Smultron Spritz alkoholfri är en frisk och bubblig sommardrink med söt smak av smultron, toppad med
-          alkoholfritt mousserande vin och en skvätt sodavatten. Lätt, bärig och somrig, perfekt som välkomstdrink när
-          du vill ha festkänsla utan alkohol.</p>
-        <button>Läs mer</button>
-      </article>
-
-      <article>
-        <img src="img/png/Fizzy-fläder-drink.png" alt="Juniper Fizzy Fläder">
-        <h3>Fizzy Fläder</h3>
-        <p>Fizzy Fläder är en frisk och alkoholfri sommardrink med blommiga toner av fläder, balanserad med syrlig
-          citron och toppas med sprudlande sodavatten. Lätt, uppfriskande och elegant, perfekt för varma dagar och
-          festliga stunder.</p>
-        <button>Läs mer</button>
-      </article>
-    </section>
-    <!-- ===== SECTION 3 END ===== -->
-
-
-    <!-- ===== SECTION 4 START  ===== -->
-    <section id="stores" class="stores">
-      <h2>Du hittar oss här</h2>
-
-      <div class="store-logos">
-        <img src="img/png/Systembolagets-logo.png" alt="Systembolaget">
-        <img src="img/png/Coop-logo.png" alt="Coop">
-        <img src="img/png/Hemköp-logo.png" alt="Hemköp">
-        <img src="img/png/Saluhall-logo.png" alt="Saluhall">
-        <img src="img/png/Cajsa-warg_webblogo.png" alt="Cajsa-warg">
-      </div>
-    </section>
-    <!-- ===== SECTION 4 END ===== -->
-
-
-    <!-- ===== SECTION 5 START  ===== -->
-    <section class="newsletter">
-      <h2>Nyhetsbrev</h2>
-      <p>Prenumerera för att få de senaste från Juniper</p>
-
-      <form>
-        <p>E-postadress:</p>
-        <input type="email" placeholder="E‑postadress">
-        <button type="submit">Skicka</button>
-      </form>
-    </section>
-    <!-- ===== SECTION 5 END ===== -->
-
-  </main>
-  <!-- ================= MAIN END ================= -->
-
-
-  <!-- ================= FOOTER START  ================= -->
-  <footer>
-    <div class="footer-brand">
-      <img src="img/svg/Juniper-logo-ljusblå.svg" alt="Juniper logotyp">
-      <address>
-        Juniper AB<br>
-        Bärskogsvägen 11<br>
-        621 45 Visby<br>
-        <br>
-        Telefon:<br>
-        <a href="tel:+46701234567">+46 70 123 45 67</a>
-      </address>
-    </div>
-
-    <div class="footer-col">
-      <h4>Produkter</h4>
-      <ul>
-        <li><a href="#">Juniper Blåbär</a></li>
-        <li><a href="#">Juniper Smultron</a></li>
-        <li><a href="#">Juniper Fläder</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Om Juniper</h4>
-      <ul>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">Här hittar du oss</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Hem</h4>
-      <img src="img/svg/Juniper-namn-skrivstil.svg" alt="">
-    </div>
-
-    <div class="footer-bottom">
-      <p>Alla rättigheter reserverade @ Juniper AB</p>
-      <nav aria-label="Juridiska länkar">
-        <a href="#">Användarrättigheter</a>
-        <span>|</span>
-        <a href="#">Cookies</a>
+        <ul class="nav-links nav-links--right">
+          <li><a href="#inspiration">Inspiration</a></li>
+          <li><a href="#stores">Hitta oss</a></li>
+        </ul>
       </nav>
-    </div>
-  </footer>
-  <!-- ================= FOOTER END ================= -->
+    </header>
+    <!-- ================= HEADER END ================= -->
 
+    <!-- ================= MAIN START ================= -->
+    <main>
+      <!-- ===== HERO START  ===== -->
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <h1>JUNIPER<br />FÖR SVENSKA SOMMARKVÄLLAR</h1>
+          <p>INSPIRERAD AV NATUREN<br />SKAPAD FÖR STUNDER SOM STANNAR KVAR</p>
+        </div>
+        <img src="img/png/Main-hero-header-bild.png" alt="Juniper flaskor" />
+      </section>
+      <!-- ===== HERO END ===== -->
 
-  <!-- ================= SCRIPTS  ================= -->
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+      <!-- ===== SECTION 1 START  ===== -->
+      <section id="craft" class="craft">
+        <img
+          src="img/png/Hantverksbild.png"
+          alt="Juniper flaskor med destilleringsutrustning"
+        />
 
+        <div class="craft-text">
+          <h2>Hantverk</h2>
+          <p>
+            Varje flaska utformas med naturen som inspiration. Nordiska råvaror
+            plockas när de är som mest aromrika och förädlas varsamt för att
+            bevara sin rena karaktär. Genom långsam destillering och noggrant
+            utvald infusering fångas essensen av bär och blommor i en alkoholfri
+            botanisk upplevelse med djup och balans. Inga genvägar, inga onödiga
+            tillsatser, bara rena råvaror som lyfts till sin mest eleganta form.
+          </p>
+          <button>Vår historia</button>
+        </div>
+        <img
+          src="img/svg/Fläder-illustration.svg"
+          alt=""
+          aria-hidden="true"
+          class="decor decor--craft"
+        />
+      </section>
+      <!-- ===== SECTION 1 END ===== -->
+
+      <!-- ===== SECTION 2 START  ===== -->
+      <section id="news" class="news">
+        <h2>Sommarens nyheter</h2>
+
+        <div class="product-grid">
+          <article>
+            <img
+              src="img/png/Flaska-blåbärsblom.png"
+              alt="Juniper Blåbärsblom flaska"
+            />
+            <h3>Blåbärsblom</h3>
+            <p>
+              Blåbärsblom har en klar och sval ton med en subtil bärighet som
+              ger djup och tydlighet. Smaken är krispig, modern och stilren, en
+              lugn blå nyans i smakform med ett stilla och självsäkert uttryck.
+               
+            </p>
+          </article>
+
+          <article>
+            <img
+              src="img/png/Flaska-Smultron.png"
+              alt="Juniper Smultron flaska"
+            />
+            <h3>Smultron</h3>
+            <p>
+              Smultronessensen är mjuk och bärig med en naturlig, varm rundhet.
+              Den har en len och följsam karaktär som dröjer sig kvar och skapar
+              en harmonisk bärprofil med mjukt djup.
+            </p>
+          </article>
+
+          <article>
+            <img src="img/png/Flaska-Fläder.png" alt="Juniper Fläder flaska" />
+            <h3>Fläder</h3>
+            <p>
+              Fläder har en elegant, floralt skimrande ton med en mild och
+              naturlig mjukhet. Smaken är ljus, fräsch och väl avvägd, ett
+              tidlöst, nordiskt blomuttryck med förfinad elegans.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- ===== SECTION 2 END ===== -->
+
+      <!-- ===== SECTION 3 START  ===== -->
+      <section id="inspiration" class="inspiration">
+        <h2>Hitta inspiration</h2>
+
+        <img
+          src="img/svg/Blåbär-illustration.svg"
+          alt=""
+          aria-hidden="true"
+          class="decor decor--craft"
+        />
+
+        <article>
+          <img src="img/png/Blåbärsour-drink.png" alt="Juniper Blåbär Sour" />
+          <h3>Blåbär Sour</h3>
+          <p>
+            En frisk och somrig blåbärsdrink med balanserad syra från citron,
+            mjuk sötma och en lätt botanisk ton. Len, bärig och uppfriskande,
+            med ett fint skum på toppen som ger en lyxig känsla.
+          </p>
+          <button>Läs mer</button>
+        </article>
+
+        <article>
+          <img
+            src="img/png/Smultron-Spritz-drink.png"
+            alt="Juniper Smultron Spritz"
+          />
+          <h3>Smultron Spritz</h3>
+          <p>
+            Smultron Spritz alkoholfri är en frisk och bubblig sommardrink med
+            söt smak av smultron, toppad med alkoholfritt mousserande vin och en
+            skvätt sodavatten. Lätt, bärig och somrig, perfekt som välkomstdrink
+            när du vill ha festkänsla utan alkohol.
+          </p>
+          <button>Läs mer</button>
+        </article>
+
+        <article>
+          <img
+            src="img/png/Fizzy-fläder-drink.png"
+            alt="Juniper Fizzy Fläder"
+          />
+          <h3>Fizzy Fläder</h3>
+          <p>
+            Fizzy Fläder är en frisk och alkoholfri sommardrink med blommiga
+            toner av fläder, balanserad med syrlig citron och toppas med
+            sprudlande sodavatten. Lätt, uppfriskande och elegant, perfekt för
+            varma dagar och festliga stunder.
+          </p>
+          <button>Läs mer</button>
+        </article>
+      </section>
+      <!-- ===== SECTION 3 END ===== -->
+
+      <!-- ===== SECTION 4 START  ===== -->
+      <section id="stores" class="stores">
+        <h2>Du hittar oss här</h2>
+
+        <div class="store-logos">
+          <img src="img/png/Systembolagets-logo.png" alt="Systembolaget" />
+          <img src="img/png/Coop-logo.png" alt="Coop" />
+          <img src="img/png/Hemköp-logo.png" alt="Hemköp" />
+          <img src="img/png/Saluhall-logo.png" alt="Saluhall" />
+          <img src="img/png/Cajsa-warg_webblogo.png" alt="Cajsa-warg" />
+        </div>
+      </section>
+      <!-- ===== SECTION 4 END ===== -->
+
+      <!-- ===== SECTION 5 START  ===== -->
+      <section class="newsletter">
+        <h2>Nyhetsbrev</h2>
+        <p>Prenumerera för att få de senaste från Juniper</p>
+
+        <form>
+          <p>E-postadress:</p>
+          <input type="email" placeholder="E‑postadress" />
+          <button type="submit">Skicka</button>
+        </form>
+      </section>
+      <!-- ===== SECTION 5 END ===== -->
+    </main>
+    <!-- ================= MAIN END ================= -->
+
+    <!-- ================= FOOTER START  ================= -->
+    <footer>
+      <div class="footer-brand">
+        <img src="img/svg/Juniper-logo-ljusblå.svg" alt="Juniper logotyp" />
+        <address>
+          Juniper AB<br />
+          Bärskogsvägen 11<br />
+          621 45 Visby<br />
+          <br />
+          Telefon:<br />
+          <a href="tel:+46701234567">+46 70 123 45 67</a>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h4>Produkter</h4>
+        <ul>
+          <li><a href="#">Juniper Blåbär</a></li>
+          <li><a href="#">Juniper Smultron</a></li>
+          <li><a href="#">Juniper Fläder</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Om Juniper</h4>
+        <ul>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Här hittar du oss</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hem</h4>
+        <img src="img/svg/Juniper-namn-skrivstil.svg" alt="" />
+      </div>
+
+      <div class="footer-bottom">
+        <p>Alla rättigheter reserverade @ Juniper AB</p>
+        <nav aria-label="Juridiska länkar">
+          <a href="#">Användarrättigheter</a>
+          <span>|</span>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- ================= FOOTER END ================= -->
+
+    <!-- ================= SCRIPTS  ================= -->
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

@@ -1,13 +1,14 @@
-@import './_variables.scss';
-@import './_typography.scss';
-@import './_buttons.scss';
-@import './_footer.scss';
-@import './_header.scss';
-@import './_layout.scss';
-@import './_spacing.scss';
-@import './_responsive.scss';
-@import './_newsletter.scss';
-@import './hero.scss';
+@use './_variables' as *;
+@use './_typography' as *;
+@use './_buttons' as *;
+@use './_footer' as *;
+@use './_header' as *;
+@use './_layout' as *;
+@use './_spacing' as *;
+@use './_responsive' as *;
+@use './_newsletter' as *;
+@use './hero' as *;
+
 html,
 body {
   margin: 0;

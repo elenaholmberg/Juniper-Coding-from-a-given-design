@@ -1,0 +1,80 @@
+:root {
+  --summer-haze: #FFFFFF;
+  --blueberry: #12365C;
+  --sea-breeze: #C3DBF5;
+  --strawberry-icecream: #FFD6DF;
+  --blueberry-purree: #66000F;
+  --warm-elder: #FFF1CD;
+  --honey-gold: #735711;
+  --yellow-gradient: linear-gradient(45deg, #FFF1CD, #FFF6DF);
+  --pink-gradient: linear-gradient(45deg, #FFD6DF, #FFE7EA);
+}
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 3.125rem;
+  font-style: normal;
+}
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 4rem;
+  font-style: semi-bold;
+}
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-style: semi-bold;
+}
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 1.875rem;
+  font-style: bold;
+}
+
+.open-sans-uniquifier {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25rem;
+}
+
+.open-sans-uniquifier {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.5rem;
+}
+
+.open-sans-uniquifier {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25rem;
+}
+
+:root {
+  --section-spacing-desktop: 150px;
+  --section-spacing-tablet: 90px;
+  --section-spacing-mobile: 70px;
+  --section-inner-spacing-mobile: 35px;
+  --container-padding-desktop: 80px;
+  --container-padding-tablet: 45px;
+  --container-padding-mobile: 20px;
+}/*# sourceMappingURL=main.css.map */

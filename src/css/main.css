@@ -10,7 +10,7 @@
   --pink-gradient: linear-gradient(45deg, #FFD6DF, #FFE7EA);
 }
 
-.playfair-display-uniquifier {
+.heading-1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -18,7 +18,7 @@
   font-style: normal;
 }
 
-.playfair-display-uniquifier {
+.heading-2 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -26,7 +26,7 @@
   font-style: semi-bold;
 }
 
-.playfair-display-uniquifier {
+.heading-3 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -34,7 +34,9 @@
   font-style: semi-bold;
 }
 
-.playfair-display-uniquifier {
+.heading-4,
+.heading-5,
+.heading-6 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -42,7 +44,7 @@
   font-style: bold;
 }
 
-.open-sans-uniquifier {
+.body-nav-foot-text {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -51,7 +53,7 @@
   font-size: 1.25rem;
 }
 
-.open-sans-uniquifier {
+.body-nav-foot-text:hover {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -60,7 +62,7 @@
   font-size: 1.5rem;
 }
 
-.open-sans-uniquifier {
+.footer-heading {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -77,4 +79,20 @@
   --container-padding-desktop: 80px;
   --container-padding-tablet: 45px;
   --container-padding-mobile: 20px;
+}
+
+.heading-1 {
+  color: #12365c;
+  text-align: center;
+}
+
+.body-nav-foot-text {
+  text-align: center;
+  color: #12365c;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=main.css.map */

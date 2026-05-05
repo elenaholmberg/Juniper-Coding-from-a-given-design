@@ -1,0 +1,168 @@
+// ===============================
+// HEADER
+// ===============================
+
+header {
+  background-color: var(--sea-breeze);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+}
+
+// ---- Nav länklista (gemensam) ----
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--blueberry);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+// ---- Logo i mitten ----
+.nav-logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 64px;
+    width: auto;
+  }
+}
+
+// ---- Hamburger (dold på desktop) ----
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+
+  span {
+    display: block;
+    background-color: var(--blueberry);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    // Tre streck — överst och underst längre, mitten kortare
+    &:nth-child(1) { width: 28px; height: 2px; }
+    &:nth-child(2) { width: 28px; height: 2px; }
+    &:nth-child(3) { width: 18px; height: 2px; }
+  }
+}
+
+// ===============================
+// RESPONSIVE — desktop (≥1025px)
+// ===============================
+
+@media (min-width: 1025px) {
+  nav {
+    padding-inline: 4rem;
+  }
+}
+
+// ===============================
+// RESPONSIVE — iPad (769px–1024px)
+// ===============================
+
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  nav {
+    position: relative;
+  }
+
+  // Visa bara "Kontakta oss" från vänsterlistan
+  .nav-links--left {
+    li:first-child {
+      display: none;
+    }
+  }
+
+  // Dölj höger-listan helt (Inspiration/Hitta oss)
+  .nav-links--right {
+    display: none;
+  }
+
+  // Hamburger till vänster
+  .hamburger {
+    display: flex;
+    order: -1;
+  }
+
+  // Logo centrerad med absolute
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      height: 52px;
+    }
+  }
+}
+
+// ===============================
+// RESPONSIVE — mobil (≤768px)
+// ===============================
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1.2rem 1.25rem;
+    position: relative;
+  }
+
+  // Dölj navlänkar i headern, visa som dropdown
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--sea-breeze);
+    padding: 1.5rem 2rem;
+    border-top: 1px solid rgba(18, 54, 92, 0.15);
+
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  // Hamburger till vänster
+  .hamburger {
+    display: flex;
+    order: -1;
+  }
+
+  // Logo centrerad
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      height: 36px;
+    }
+  }
+}

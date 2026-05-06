@@ -1064,6 +1064,14 @@ main {
   font-size: 1.25rem;
 }
 
+.craft-flower {
+  grid-column: 8/span 12;
+  position: relative;
+  z-index: 2;
+  margin-top: -300px;
+  margin-left: 40px;
+}
+
 html,
 body {
   margin: 0;

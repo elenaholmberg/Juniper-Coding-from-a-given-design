@@ -62,3 +62,11 @@
   font-variation-settings: 'wdth' 100;
   font-size: 1.25rem; //20px
 }
+
+.craft-flower {
+  grid-column: 8 / span 12;
+  position: relative;
+  z-index: 2;
+  margin-top: -300px;
+  margin-left: 40px;
+}

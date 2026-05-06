@@ -104,7 +104,7 @@ nav {
 }
 .nav-links a {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 400;
   color: var(--blueberry);
   text-decoration: none;
@@ -326,49 +326,117 @@ main {
     max-width: 100%;
   }
 }
+.news h2 {
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.news p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.product-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  display: block;
+}
+
+.product-grid article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #000;
+  justify-content: space-between;
+}
+
+.product-grid article h3 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ====================
+   HERO (desktop + tablet)
+==================== */
 .hero {
   position: relative;
-  width: 1440px;
+  width: 100%;
 }
 
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 🎯 Ankare – justeras efter objekt i bilden */
 .hero-text {
   position: absolute;
-  top: 250px;
-  left: 420px;
+  top: 19%;
+  left: 29%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
 }
 
+/* ====================
+   TEXT
+==================== */
 .heading-1 {
+  font-size: clamp(1.4rem, 3vw, 3rem);
   color: #12365c;
-  text-align: center;
-  width: 640px;
-  height: 225px;
-  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .body-nav-foot-text {
-  width: 700px;
-  height: 154px;
-  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   color: #12365c;
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  font-size: 1.25rem;
-  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .line {
-  margin: 0 auto;
-  width: 203px;
+  width: clamp(120px, 22vw, 203px);
   height: 2px;
   background: #12365c;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
+/* ====================
+   TABLET (just finjustering)
+==================== */
+@media (max-width: 834px) {
+  .heading-1 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+  }
+  .body-nav-foot-text {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  }
+}
+/* ====================
+   MOBILE (iPhone-storlek)
+==================== */
+@media (max-width: 386px) {
+  .hero-text {
+    display: none;
+  }
+}
 html,
 body {
   margin: 0;

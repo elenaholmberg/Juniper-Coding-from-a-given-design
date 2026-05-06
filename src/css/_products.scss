@@ -2,12 +2,17 @@
 //product cards
 //================================
 
+.news {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    min-width: 1200px;
+    gap: 40px;
 }
 
 .product-grid img {
@@ -60,6 +65,14 @@
 }
 
 //================================
+// .swiper
+//================================
+
+.product-swiper {
+    overflow: hidden;
+}
+
+//================================
 // spacing
 //================================
 
@@ -72,9 +85,15 @@
 //================================
 
 @media (max-width: 1200px) {
+    .news {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
     .product-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        min-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 20px;
         justify-items: center;
     }
     .product-grid img {
@@ -83,7 +102,6 @@
     .product-grid article {
         width: 100%;
         max-width: 235px;
-        height: auto;
     }
     .product-grid article h3 {
         font-size: 30px;
@@ -96,14 +114,17 @@
     }
 }
 
+
 @media (max-width: 768px) {
     .news {
+        width: 100%;
         max-width: 352px;
         margin: 0 auto;
     }
     .product-grid {
-        grid-template-columns: 1fr;
+        display: block;
         justify-items: center;
+        margin-bottom: var(--section-spacing-mobile);
     }
     .product-grid img {
         border-radius: 16px;
@@ -130,8 +151,22 @@
         text-align: center;
         margin-top: 0;
     }
-    .product-grid {
-        margin-bottom: var(--section-spacing-mobile);
+    .swiper-pagination-bullet {
+        background: var(--blueberry) !important;
+        opacity: 0.4 !important;
+        width: 11px !important;
+        height: 11px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--blueberry) !important;
+        opacity: 1 !important;
+    }
+    .swiper-pagination {
+        position: absolute !important;
+    }
+    .product-swiper {
+        padding-bottom: 30px !important;
     }
 }
 

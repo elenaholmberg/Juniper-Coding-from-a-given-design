@@ -25,6 +25,8 @@
 
   width: 90%;
   max-width: 700px;
+  /* Gör så att texten inte reagerar på muspekaren (hover/klick) */
+  pointer-events: none;
 }
 
 /* ====================
@@ -44,6 +46,8 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  /* Säkerställ att inga transitions eller text-dekorationer finns */
+  text-decoration: none;
 }
 
 .line {
@@ -71,8 +75,37 @@
    MOBILE (iPhone-storlek)
 ==================== */
 
-@media (max-width: 386px) {
+@media (max-width: 768px) {
   .hero-text {
     display: none;
+  }
+}
+
+/* ====================
+   MOBILE (≤768px)
+==================== */
+
+@media (max-width: 768px) {
+  .hero {
+    /* Vi sätter en fast höjd för att skapa utrymmet som bilden ska fylla */
+    height: 500px; 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero img {
+    height: 100%;
+    width: 100%;
+    /* 'cover' tvingar bilden att fylla hela höjden/bredden */
+    object-fit: cover; 
+    
+    /* Detta centrerar bilden perfekt i mitten */
+    object-position: right center; 
+  }
+
+  .hero-text {
+    /* Döljer texten enligt önskemål för mobil layout[cite: 4] */
+    display: none; 
   }
 }

@@ -1,7 +1,7 @@
 .inspiration {
   width: 1281px;
   margin-top: 168px;
-  margin-left: 55px;
+  margin-left: 0;
 
   h2 {
     margin: 0 0 56px;
@@ -248,6 +248,26 @@
       height: auto;
       margin-left: 0;
       margin-right: 0;
+    }
+  }
+}
+
+// ===============================
+// RESPONSIVE — mobil (≤768px)
+// ===============================
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    form {
+      input[type='email'] {
+        max-width: 100%;
+      }
     }
   }
 }

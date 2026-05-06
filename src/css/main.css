@@ -401,7 +401,7 @@ nav {
   padding: 2rem 1.5rem 3rem;
   box-sizing: border-box;
   overflow-y: auto;
-  width: 100%;
+  width: min(100%, 380px);
   opacity: 0;
   pointer-events: none;
   transform: translateX(-100%);
@@ -673,11 +673,17 @@ main {
     max-width: 100%;
   }
 }
+.news {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .product-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  min-width: 1200px;
+  gap: 40px;
 }
 
 .product-grid img {
@@ -723,14 +729,24 @@ main {
   font-weight: 400;
 }
 
+.product-swiper {
+  overflow: hidden;
+}
+
 .product-grid {
   margin-bottom: var(--section-spacing-desktop);
 }
 
 @media (max-width: 1200px) {
+  .news {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   .product-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    min-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
     justify-items: center;
   }
   .product-grid img {
@@ -739,7 +755,6 @@ main {
   .product-grid article {
     width: 100%;
     max-width: 235px;
-    height: auto;
   }
   .product-grid article h3 {
     font-size: 30px;
@@ -753,12 +768,14 @@ main {
 }
 @media (max-width: 768px) {
   .news {
+    width: 100%;
     max-width: 352px;
     margin: 0 auto;
   }
   .product-grid {
-    grid-template-columns: 1fr;
+    display: block;
     justify-items: center;
+    margin-bottom: var(--section-spacing-mobile);
   }
   .product-grid img {
     border-radius: 16px;
@@ -785,8 +802,256 @@ main {
     text-align: center;
     margin-top: 0;
   }
-  .product-grid {
-    margin-bottom: var(--section-spacing-mobile);
+  .swiper-pagination-bullet {
+    background: var(--blueberry) !important;
+    opacity: 0.4 !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--blueberry) !important;
+    opacity: 1 !important;
+  }
+  .swiper-pagination {
+    position: absolute !important;
+  }
+  .product-swiper {
+    padding-bottom: 30px !important;
+  }
+}
+.inspiration {
+  width: 1281px;
+  margin-top: 168px;
+  margin-left: 0;
+}
+.inspiration h2 {
+  margin: 0 0 56px;
+  color: #66000f;
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.inspiration-box {
+  position: relative;
+  width: 100%;
+  height: 1850px;
+  padding: 52px 30px 54px;
+  background: #ffe7ea;
+  color: var(--Mrk-jordgubbe, #66000f);
+}
+.inspiration-box .decor {
+  position: absolute;
+  top: -86px;
+  right: -74px;
+  width: 280.0028652968px;
+  height: 231.1513033823px;
+  transform: rotate(2.94deg);
+  opacity: 1;
+}
+.inspiration-box .insp-card {
+  display: grid;
+  align-items: start;
+  border-radius: 22px;
+  opacity: 1;
+}
+.inspiration-box .card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 22px;
+}
+.inspiration-box .card-content h3 {
+  margin: 0;
+  color: var(--Mrk-jordgubbe, #66000f);
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.inspiration-box .card-content p {
+  margin: 0;
+  color: var(--Mrk-jordgubbe, #66000f);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.inspiration-box .card-content button {
+  width: 161px;
+  height: 55.01px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 0;
+  border: 2px solid var(--Mrk-jordgubbe, #66000f);
+  background: transparent;
+  color: var(--Mrk-jordgubbe, #66000f);
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.inspiration-box .card-content button:hover, .inspiration-box .card-content button:focus-visible {
+  background: var(--Mrk-jordgubbe, #66000f);
+  color: #ffe7ea;
+}
+.inspiration-box .card-blue {
+  width: 1118px;
+  height: 460px;
+  margin: 51px 0 0 32px;
+  grid-template-columns: 492px 564px;
+  -moz-column-gap: 61px;
+       column-gap: 61px;
+}
+.inspiration-box .card-blue .card-img {
+  width: 492px;
+  height: 460px;
+}
+.inspiration-box .card-blue .card-content h3 {
+  width: 665px;
+  height: 46px;
+  margin-top: 54px;
+  margin-bottom: 38px;
+}
+.inspiration-box .card-blue .card-content p {
+  width: 564px;
+  height: 108px;
+  margin-top: 0;
+}
+.inspiration-box .card-blue .card-content button {
+  margin-top: 83px;
+}
+.inspiration-box .card-smul {
+  position: relative;
+  width: 1159px;
+  height: 460px;
+  margin: 132px 0 0 32px;
+  display: block;
+}
+.inspiration-box .card-smul .card-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 491px;
+  height: 460px;
+}
+.inspiration-box .card-smul .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 665px;
+}
+.inspiration-box .card-smul .card-content h3,
+.inspiration-box .card-smul .card-content p {
+  width: 665px;
+}
+.inspiration-box .card-smul .card-content h3 {
+  margin-bottom: 30px;
+}
+.inspiration-box .card-smul .card-content p {
+  height: 192px;
+}
+.inspiration-box .card-smul .card-content button {
+  position: absolute;
+  top: 214px;
+  left: 0;
+  margin: 0;
+}
+.inspiration-box .card-fizzy {
+  width: 1159px;
+  height: 460px;
+  margin: 97px 0 78px 32px;
+  grid-template-columns: 493px 605px;
+  -moz-column-gap: 61px;
+       column-gap: 61px;
+}
+.inspiration-box .card-fizzy .card-img {
+  width: 493px;
+  height: 460px;
+}
+.inspiration-box .card-fizzy .card-content {
+  grid-column: 2;
+  margin-top: 66px;
+  position: relative;
+}
+.inspiration-box .card-fizzy .card-content h3 {
+  width: 605px;
+  height: 46px;
+  margin-bottom: 26px;
+}
+.inspiration-box .card-fizzy .card-content p {
+  width: 604px;
+  height: 116px;
+  margin-top: 0;
+}
+.inspiration-box .card-fizzy .card-content button {
+  position: absolute;
+  top: 196px;
+  left: 0;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .inspiration {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .inspiration h2 {
+    font-size: 44px;
+    margin-bottom: 32px;
+  }
+  .inspiration-box {
+    height: auto;
+    padding: 36px 18px;
+  }
+  .inspiration-box .decor {
+    top: 72px;
+    width: 110px;
+  }
+  .inspiration-box .insp-card {
+    width: auto;
+    height: auto;
+    margin: 0 0 40px;
+    grid-template-columns: 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .inspiration-box .card-img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  .inspiration-box .card-content h3,
+  .inspiration-box .card-content p,
+  .inspiration-box .card-content button {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .newsletter {
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+  }
+  .newsletter h2 {
+    font-size: 2.5rem;
+  }
+  .newsletter form input[type=email] {
+    max-width: 100%;
   }
 }
 /* ====================
@@ -812,6 +1077,8 @@ main {
   text-align: center;
   width: 90%;
   max-width: 700px;
+  /* Gör så att texten inte reagerar på muspekaren (hover/klick) */
+  pointer-events: none;
 }
 
 /* ====================
@@ -830,6 +1097,8 @@ main {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  /* Säkerställ att inga transitions eller text-dekorationer finns */
+  text-decoration: none;
 }
 
 .line {
@@ -853,8 +1122,34 @@ main {
 /* ====================
    MOBILE (iPhone-storlek)
 ==================== */
-@media (max-width: 386px) {
+@media (max-width: 768px) {
   .hero-text {
+    display: none;
+  }
+}
+/* ====================
+   MOBILE (≤768px)
+==================== */
+@media (max-width: 768px) {
+  .hero {
+    /* Vi sätter en fast höjd för att skapa utrymmet som bilden ska fylla */
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero img {
+    height: 100%;
+    width: 100%;
+    /* 'cover' tvingar bilden att fylla hela höjden/bredden */
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* Detta centrerar bilden perfekt i mitten */
+    -o-object-position: right center;
+       object-position: right center;
+  }
+  .hero-text {
+    /* Döljer texten enligt önskemål för mobil layout[cite: 4] */
     display: none;
   }
 }
@@ -999,10 +1294,27 @@ main {
     height: 57px;
   }
 }
+/* =========================
+   SECTION: CRAFT
+========================= */
 .craft {
   margin-top: 150px;
 }
 
+/* =========================
+   BACKGROUND BOX
+========================= */
+.color-box {
+  background-color: #fff1cd;
+  width: 100%;
+  height: 864px;
+  position: relative;
+  z-index: 0;
+}
+
+/* =========================
+   CONTAINER GRID
+========================= */
 .craft-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1012,18 +1324,20 @@ main {
   z-index: 1;
 }
 
-.color-box {
-  background-color: #fff1cd;
-  width: 100%;
-  height: 864px;
-  position: relative;
-  z-index: 0;
-}
-
+/* =========================
+   IMAGE
+========================= */
 .craft-picture {
   grid-column: 2/span 5;
 }
 
+.craft-image {
+  border-radius: 22px;
+}
+
+/* =========================
+   TEXT BLOCK
+========================= */
 .craft-text {
   grid-column: 7/span 5;
   display: flex;
@@ -1033,12 +1347,11 @@ main {
   color: #735711;
 }
 
-.craft-image {
-  border-radius: 22px;
-}
-
+/* =========================
+   TYPOGRAPHY
+========================= */
 .body-text {
-  margin-top: 0px;
+  margin-top: 0;
   margin-left: 10px;
   margin-bottom: 40px;
   font-family: "Open Sans", sans-serif;
@@ -1046,9 +1359,12 @@ main {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* 20px */
 }
 
+/* =========================
+   BUTTON
+========================= */
 .button-primary {
   background-color: #735711;
   color: #fff;
@@ -1061,9 +1377,12 @@ main {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* 20px */
 }
 
+/* =========================
+   DECOR ELEMENT
+========================= */
 .craft-flower {
   grid-column: 8/span 12;
   position: relative;
@@ -1072,6 +1391,36 @@ main {
   margin-left: 40px;
 }
 
+@media (max-width: 1024px) {
+  .craft {
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+  .color-box {
+    height: 800px;
+    margin-top: 200px;
+  }
+  .craft-container {
+    margin-top: -700px;
+    margin-left: 0;
+  }
+  .craft-picture {
+    grid-column: 3/span 6;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+  .craft-text {
+    grid-column: 4/span 6;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .craft-flower {
+    display: none;
+  }
+  .button-primary {
+    align-self: center;
+  }
+}
 html,
 body {
   margin: 0;

@@ -1,0 +1,127 @@
+// ===============================
+// STORES — Du hittar oss här
+// ===============================
+
+.stores {
+  padding: var(--section-spacing-desktop) var(--container-padding-desktop);
+  text-align: center;
+  background-color: var(--summer-haze);
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--blueberry);
+    margin-bottom: 3rem;
+  }
+
+  .store-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .store-logos-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+  }
+
+  .store-logos-row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  // ---- Exakta Figma-mått per logotyp ----
+  .store-logos-row-1 img:nth-child(1) { // Systembolaget
+    width: 223px;
+    height: 113px;
+    object-fit: contain;
+  }
+
+  .store-logos-row-1 img:nth-child(2) { // Coop
+    width: 272px;
+    height: 113px;
+    object-fit: contain;
+  }
+
+  .store-logos-row-1 img:nth-child(3) { // Hemköp
+    width: 223px;
+    height: 113px;
+    object-fit: contain;
+  }
+
+  .store-logos-row-2 img:nth-child(1) { // Saluhall (svarta cirkeln)
+    width: 113px;
+    height: 113px;
+    object-fit: contain;
+  }
+
+  .store-logos-row-2 img:nth-child(2) { // Cajsa Warg
+    width: 223px;
+    height: 113px;
+    object-fit: contain;
+  }
+}
+
+// ===============================
+// RESPONSIVE — Tablet (769px–1024px)
+// ===============================
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .stores {
+    padding: var(--section-spacing-tablet) var(--container-padding-tablet);
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .store-logos { gap: 2.5rem; }
+    .store-logos-row-1 { gap: 2rem; }
+    .store-logos-row-2 { gap: 2rem; }
+
+    // Skala ner proportionellt ~75%
+    .store-logos-row-1 img:nth-child(1) { width: 167px; height: 85px; }
+    .store-logos-row-1 img:nth-child(2) { width: 204px; height: 85px; }
+    .store-logos-row-1 img:nth-child(3) { width: 167px; height: 85px; }
+    .store-logos-row-2 img:nth-child(1) { width: 85px;  height: 85px; }
+    .store-logos-row-2 img:nth-child(2) { width: 167px; height: 85px; }
+  }
+}
+
+// ===============================
+// RESPONSIVE — Mobil (≤768px)
+// ===============================
+
+@media (max-width: 768px) {
+  .stores {
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+
+    h2 {
+      font-size: 2.75rem;
+      margin-bottom: var(--section-inner-spacing-mobile);
+    }
+
+    .store-logos { gap: var(--section-inner-spacing-mobile); }
+    .store-logos-row-1 {
+      gap: 0.75rem;
+      justify-content: space-between;
+    }
+    .store-logos-row-2 { gap: 1.5rem; }
+
+    // Skala ner proportionellt ~50%
+    .store-logos-row-1 img:nth-child(1) { width: 112px; height: 57px; }
+    .store-logos-row-1 img:nth-child(2) { width: 136px; height: 57px; }
+    .store-logos-row-1 img:nth-child(3) { width: 112px; height: 57px; }
+    .store-logos-row-2 img:nth-child(1) { width: 57px;  height: 57px; }
+    .store-logos-row-2 img:nth-child(2) { width: 112px; height: 57px; }
+  }
+}

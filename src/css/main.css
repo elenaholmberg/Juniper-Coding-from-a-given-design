@@ -673,22 +673,11 @@ main {
     max-width: 100%;
   }
 }
-.news h2 {
-  font-size: 64px;
-  font-family: "Playfair Display", serif;
-  text-align: center;
-}
-
-.news p {
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  text-align: left;
-}
-
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  justify-items: center;
+  min-width: 1200px;
 }
 
 .product-grid img {
@@ -703,18 +692,103 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid #000;
   justify-content: space-between;
+  max-width: 394px;
+  height: auto;
+}
+
+.news h2 {
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: var(--blueberry);
+  font-weight: 600;
 }
 
 .product-grid article h3 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
   text-align: left;
   margin: 0;
   font-weight: 600;
+  color: var(--blueberry);
+  padding-top: 20px;
 }
 
+.news p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  color: var(--blueberry);
+  font-weight: 400;
+}
+
+.product-grid {
+  margin-bottom: var(--section-spacing-desktop);
+}
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 100%;
+    justify-items: center;
+  }
+  .product-grid img {
+    border-radius: 16px;
+  }
+  .product-grid article {
+    width: 100%;
+    max-width: 235px;
+    height: auto;
+  }
+  .product-grid article h3 {
+    font-size: 30px;
+  }
+  .news p {
+    font-size: 16px;
+  }
+  .product-grid {
+    margin-bottom: var(--section-spacing-tablet);
+  }
+}
+@media (max-width: 768px) {
+  .news {
+    max-width: 352px;
+    margin: 0 auto;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .product-grid img {
+    border-radius: 16px;
+    max-width: 345px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .product-grid article {
+    width: 100%;
+    max-width: 400px;
+  }
+  .news h2 {
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+  }
+  .product-grid article h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .news p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .product-grid {
+    margin-bottom: var(--section-spacing-mobile);
+  }
+}
 /* ====================
    HERO (desktop + tablet)
 ==================== */
@@ -780,15 +854,6 @@ main {
    MOBILE (iPhone-storlek)
 ==================== */
 @media (max-width: 386px) {
-  .hero img {
-    width: 100%;
-    height: 60vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-    /* 👇 detta är nyckeln */
-    -o-object-position: 70% 20%;
-       object-position: 70% 20%;
-  }
   .hero-text {
     display: none;
   }
@@ -934,6 +999,79 @@ main {
     height: 57px;
   }
 }
+.craft {
+  margin-top: 150px;
+}
+
+.craft-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: -730px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.color-box {
+  background-color: #fff1cd;
+  width: 100%;
+  height: 864px;
+  position: relative;
+  z-index: 0;
+}
+
+.craft-picture {
+  grid-column: 2/span 5;
+}
+
+.craft-text {
+  grid-column: 7/span 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 150px;
+  color: #735711;
+}
+
+.craft-image {
+  border-radius: 22px;
+}
+
+.body-text {
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25rem;
+}
+
+.button-primary {
+  background-color: #735711;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 172px;
+  height: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.25rem;
+}
+
+.craft-flower {
+  grid-column: 8/span 12;
+  position: relative;
+  z-index: 2;
+  margin-top: -300px;
+  margin-left: 40px;
+}
+
 html,
 body {
   margin: 0;

@@ -1,0 +1,9 @@
+.craft {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.craft-image {
+  border: 1px solid #000;
+  border-radius: 22px;
+}

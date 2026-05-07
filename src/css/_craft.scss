@@ -42,6 +42,9 @@
 
 .craft-image {
   border-radius: 22px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* =========================
@@ -109,6 +112,37 @@
 }
 
 /* ================================
+   RESPONSIVE – STOR TABLET (≤1280px)
+================================ */
+
+@media (max-width: 1280px) {
+  .craft-container {
+    grid-template-columns: 1fr 1fr;
+    margin-top: -730px;
+    margin-left: 0;
+    padding: 0 clamp(20px, 4vw, 60px);
+  }
+
+  .craft-picture {
+    grid-column: 1 / 2;
+  }
+
+  .craft-text {
+    grid-column: 2 / 3;
+    padding-bottom: clamp(40px, 6vw, 150px);
+    padding-left: clamp(10px, 2vw, 30px);
+    padding-right: clamp(10px, 2vw, 30px);
+  }
+
+  .craft-flower {
+    grid-column: 2 / 3;
+    margin-top: clamp(-200px, -15vw, -300px);
+    margin-left: auto;
+    width: clamp(200px, 20vw, 350px);
+  }
+}
+
+/* ================================
    RESPONSIVE – TABLET (≤1024px)
 ================================ */
 
@@ -129,6 +163,7 @@
   .craft-container {
     grid-template-columns: 1fr;
     margin-top: -858px;
+    padding: 0;
   }
 
   .craft-picture {
@@ -185,6 +220,7 @@
     grid-template-columns: 1fr;
     margin-top: -870px;
     margin-left: 0;
+    padding: 0;
   }
 
   .craft-image {

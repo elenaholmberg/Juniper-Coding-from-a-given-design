@@ -60,6 +60,10 @@
   color: #735711;
 }
 
+.body-text-mobile {
+  display: none;
+}
+
 /* =========================
    TYPOGRAPHY
 ========================= */
@@ -124,10 +128,14 @@
     margin-left: 45px;
   }
 
+  .body-text-mobile {
+    display: none;
+  }
   /* Höjden måste rymma bild + text staplade */
   .color-box {
     height: 700px;
     margin-top: 250px;
+    margin-left: 0px;
   }
 
   /* Gör om till en kolumn och dra upp i color-box */
@@ -175,29 +183,26 @@
 
 @media (max-width: 768px) {
   .craft {
-    margin-top: 60px;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .color-box {
-    height: 820px;
-    margin-top: 180px;
+    height: 720px;
+    margin-top: 300px;
   }
 
   .craft-container {
     grid-template-columns: 1fr;
-    margin-top: -740px;
+    margin-top: -870px;
     margin-left: 0;
-  }
-
-  .craft-picture {
-    grid-column: 1 / -1;
-    margin-bottom: 16px;
   }
 
   .craft-image {
     border-radius: 14px;
+    justify-self: center;
+    margin-top: -80px;
   }
 
   .craft-text {
@@ -209,17 +214,29 @@
     align-items: center;
   }
 
-  .craft-text .body-text {
-    margin-left: 0;
-    font-size: 1rem; /* lite mindre på smal skärm */
+  .body-text-mobile {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 160px;
+    margin-right: 160px;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 1.25rem;
+    text-align: left;
   }
 
-  .button-primary {
-    width: 80%; /* mjukare på smal skärm */
-    max-width: 240px;
+  .body-text {
+    display: none;
   }
 
   .craft-flower {
-    display: none;
+    grid-column: 1 / -1;
+    margin-top: -170px; /* justera detta värde tills blomman hamnar rätt */
+    margin-left: auto;
+    width: 350px;
   }
 }

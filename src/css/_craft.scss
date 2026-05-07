@@ -74,7 +74,7 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
 }
 
 /* =========================
@@ -96,7 +96,7 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
 }
 
 /* =========================
@@ -113,43 +113,105 @@
   margin-left: 40px;
 }
 
-//================================
-// responsive
-//================================
+/* ================================
+   RESPONSIVE – TABLET (≤1024px)
+================================ */
 
 @media (max-width: 1024px) {
   .craft {
+    margin-top: 100px;
     margin-right: 45px;
     margin-left: 45px;
   }
 
+  /* Höjden måste rymma bild + text staplade */
   .color-box {
-    height: 800px;
+    height: 900px;
     margin-top: 200px;
   }
 
+  /* Gör om till en kolumn och dra upp i color-box */
   .craft-container {
-    margin-top: -700px;
+    grid-template-columns: 1fr;
+    margin-top: -820px; /* justerat för ny color-box höjd */
     margin-left: 0;
   }
 
   .craft-picture {
-    grid-column: 3 / span 6;
+    grid-column: 1 / -1; /* full bredd */
     margin-bottom: 20px;
-    align-self: center;
   }
 
   .craft-text {
-    grid-column: 4 / span 6;
+    grid-column: 1 / -1;
     padding-bottom: 50px;
-    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: left;
+    align-items: center; /* centrerar knappen */
+  }
+
+  /* body-text ska inte ha vänstermarginal när centrerat */
+  .craft-text .body-text {
+    margin-left: 0;
   }
 
   .craft-flower {
     display: none;
   }
+}
+
+/* ================================
+   RESPONSIVE – MOBIL (≤768px)
+================================ */
+
+@media (max-width: 768px) {
+  .craft {
+    margin-top: 60px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+
+  .color-box {
+    height: 820px;
+    margin-top: 180px;
+  }
+
+  .craft-container {
+    grid-template-columns: 1fr;
+    margin-top: -740px;
+    margin-left: 0;
+  }
+
+  .craft-picture {
+    grid-column: 1 / -1;
+    margin-bottom: 16px;
+  }
+
+  .craft-image {
+    border-radius: 14px;
+  }
+
+  .craft-text {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .craft-text .body-text {
+    margin-left: 0;
+    font-size: 1rem; /* lite mindre på smal skärm */
+  }
 
   .button-primary {
-    align-self: center;
+    width: 80%; /* mjukare på smal skärm */
+    max-width: 240px;
+  }
+
+  .craft-flower {
+    display: none;
   }
 }

@@ -57,6 +57,7 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 150px;
+  padding-left: 30px;
   color: #735711;
 }
 
@@ -138,7 +139,7 @@
     grid-column: 2 / 3;
     margin-top: clamp(-200px, -15vw, -300px);
     margin-left: auto;
-    width: clamp(200px, 20vw, 350px);
+    width: clamp(400px, 20vw, 350px);
   }
 }
 
@@ -146,7 +147,7 @@
    RESPONSIVE – TABLET (≤1024px)
 ================================ */
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .craft {
     height: 720px;
     margin-top: 100px;
@@ -199,7 +200,7 @@
 }
 
 /* ================================
-   RESPONSIVE – MOBIL (≤768px)
+   RESPONSIVE – LARGE MOBIL (769px≤848px)
 ================================ */
 
 @media (max-width: 768px) {
@@ -260,6 +261,73 @@
   .craft-flower {
     position: absolute;
     bottom: -320px;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+/* ================================
+   RESPONSIVE – MOBIL (480px≤768px)
+================================ */
+
+@media (max-width: 768px) {
+  .craft {
+    margin-top: 0;
+    margin-bottom: 120px;
+
+    position: relative;
+  }
+
+  .color-box {
+    height: 720px;
+    margin-top: 200px;
+  }
+
+  .craft-container {
+    grid-template-columns: 1fr;
+    margin-top: -770px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .craft-image {
+    border-radius: 14px;
+    justify-self: center;
+    margin-top: -80px;
+  }
+
+  .craft-text {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+
+    text-align: center;
+    align-items: center;
+  }
+
+  .body-text {
+    display: none;
+  }
+
+  .body-text-mobile {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .craft-flower {
+    position: absolute;
+    bottom: -350px;
     right: 0;
     z-index: 2;
   }

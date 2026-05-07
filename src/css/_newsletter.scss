@@ -47,7 +47,7 @@
       padding: 0.9rem 1.25rem;
       border: 2px solid var(--blueberry);
       border-radius: 10px;
-      background-color: #ffffff;
+      background-color: #E0EDFB;
       font-family: 'Open Sans', sans-serif;
       font-size: 1rem;
       color: var(--blueberry);
@@ -126,8 +126,14 @@
     }
 
     form {
+      p {
+        max-width: 330px;
+        margin: 0 auto 0.25rem;
+      }
+
       input[type='email'] {
-        max-width: 100%;
+        max-width: 300px;
+        margin-inline: auto;
       }
     }
   }

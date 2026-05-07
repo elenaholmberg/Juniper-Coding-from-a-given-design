@@ -5,7 +5,8 @@
 .newsletter {
   background-color: var(--sea-breeze);
   text-align: center;
-  padding: 2rem var(--container-padding-desktop) var(--container-padding-desktop);
+  padding: 2rem var(--container-padding-desktop)
+    var(--container-padding-desktop);
 
   h2 {
     font-family: 'Playfair Display', serif;
@@ -72,7 +73,10 @@
       font-weight: 600;
       color: var(--blueberry);
       cursor: pointer;
-      transition: background-color 180ms ease, color 180ms ease, transform 80ms ease;
+      transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        transform 80ms ease;
 
       &:hover {
         background-color: var(--blueberry);
@@ -84,7 +88,7 @@
       }
 
       &:focus {
-        outline: 3px solid rgba(18,54,92,0.12);
+        outline: 3px solid rgba(18, 54, 92, 0.12);
         outline-offset: 3px;
       }
     }
@@ -110,6 +114,10 @@
 // ===============================
 
 @media (max-width: 768px) {
+  .news {
+    z-index: -2;
+    margin-top: -100px;
+  }
   .newsletter {
     padding: var(--section-spacing-mobile) var(--container-padding-mobile);
 

@@ -1,7 +1,9 @@
 .inspiration {
-  width: 1281px;
+  width: min(1281px, calc(100% - 56px));
   margin-top: 168px;
-  margin-left: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 
   h2 {
     margin: 0 0 56px;
@@ -19,15 +21,16 @@
   position: relative;
   width: 100%;
   height: 1850px;
-  margin-left: 64px;
+  margin-left: 0;
   padding: 52px 30px 54px;
   background: #ffe7ea;
   color: var(--Mrk-jordgubbe, #66000f);
+  box-sizing: border-box;
 
   .decor {
     position: absolute;
-    top: -86px;
-    right: -74px;
+    top: -120px;
+    right: -45px;
     width: 280.002865296848px;
     height: 231.15130338227488px;
     transform: rotate(2.94deg);

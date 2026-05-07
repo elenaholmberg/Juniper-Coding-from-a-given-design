@@ -1,217 +1,235 @@
 footer {
-  background-color: var(--blueberry);
-  color: #c3dbf5;
-  display: grid;
   position: relative;
-  /* Gör footer fullbredd (full-bleed) medan innehållet kan begränsas internt */
-  width: 100vw;
-  max-width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  grid-template-rows: 350px 83px;
-  gap: 32px;
-  min-height: 406px;
+  isolation: isolate;
+  color: #c3dbf5;
+  font-family: 'Open Sans', sans-serif;
+  padding: 60px 28px 0;
+  width: 100%;
   box-sizing: border-box;
-  padding: 40px 65px 0;
-  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: auto;
 }
 
-.footer-brand img {
-  width: 62px;
-  height: 76.53px;
-  opacity: 1;
-  max-width: none;
-  margin-bottom: 25.23px;
-}
-
-.footer-brand {
-  width: 244px;
-  height: 204.23px;
-  opacity: 1;
-  margin-left: 15px;
-  margin-top: 44px;
-}
-
-.footer-brand address {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.25rem; // Nav/Footer body
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.35;
-}
-
-.footer-brand address::first-line {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.footer-brand address a {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.35;
-}
-
-.footer-col h4 {
-  margin: 0 0 0.8rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 600; // SemiBold
-  line-height: 100%;
-  letter-spacing: 0;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
-.footer-col {
-  margin-top: 79.43px;
-  height: 151.87px;
-}
-
-.footer-col ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-col-home h4 {
-  width: 161px;
-  height: 28.8px;
-  line-height: 28.8px;
-  opacity: 1;
-}
-
-.footer-col-products {
-  margin-left: 58px; 
-}
-
-.footer-col-home {
-  margin-left: 71px; 
-  margin-right: 251px;
-}
-
-.footer-col li + li {
-  margin-top: 1rem;
-}
-
-.footer-col-products li a,
-.footer-col-about li a {
-  display: block;
-  width: 160px;
-  height: 28.8px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 28.8px;
-  letter-spacing: 0;
-}
-
-.footer-col-about {
-  width: 230px;
-  height: 151.87px;
-  opacity: 1;
-  margin-left: 89px; 
-}
-
-.footer-signature {
+footer::before {
+  content: '';
   position: absolute;
-  top: 186.77px;
-  right: 124.93px;
-  width: 185.05px;
-  height: 88.9px;
-  max-width: 100%;
-  object-fit: contain;
-  transform: rotate(-9.26deg);
-  transform-origin: center;
-  margin: 0;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--blueberry);
+  z-index: -1;
 }
 
 footer a {
-  color: #c3dbf5;
+  color: inherit;
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.25rem; // Nav/Footer body
-  font-weight: 400;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
+.footer-brand {
+  max-width: 250px;
+
+  img {
+    width: 62px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  address {
+    font-size: 1.125rem;
+    line-height: 1.4;
+
+    &::first-line {
+      font-family: 'Playfair Display', serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-col {
+  h4 {
+    margin: 0 0 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 12px;
+
+      a {
+        font-size: 1rem;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.7;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Signatur-bilden
+.footer-col-home {
+  position: relative;
+
+  .footer-signature {
+    display: block;
+    margin-top: 80px;
+    padding-left: 3.5rem;
+    width: 200px;
+    transform: rotate(-9deg);
+  }
+}
+
 .footer-bottom {
   grid-column: 1 / -1;
-  grid-row: 2;
-  height: 83px;
-  margin-top: -27px;
-  padding-top: 0;
-  padding-right: 80px;
-  box-sizing: border-box;
+  margin-top: 0;
+  padding: 8px 0 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-}
-
-.footer-bottom p {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 26.88px; 
-  letter-spacing: 0;
-  vertical-align: middle;
-}
-
-.footer-bottom nav {
-  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  text-align: right;
-  vertical-align: middle;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  p,
+  nav {
+    font-size: 0.9rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+    text-transform: uppercase;
+  }
 }
 
-.footer-bottom nav a,
-.footer-bottom nav span {
-  font: inherit;
-  color: #c3dbf5;
-}
+/* --- RESPONSIVITET --- */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   footer {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 110px;
-    min-height: auto;
-    padding: 32px 24px 0;
+    grid-template-columns: 1fr;
+    gap: 50px 24px;
+    padding: 50px 24px 0;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-col {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .footer-brand address,
+  .footer-col h4 {
+    font-size: 1.25rem;
+  }
+
+  .footer-col ul li a {
+    font-size: 1.1rem;
+  }
+
+  .footer-col-home .footer-signature {
+    display: none;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .footer-bottom p,
+  .footer-bottom nav {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 600px) {
   footer {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    padding: 24px 16px;
+    padding: 40px 20px 20px;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-col {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .footer-col-home .footer-signature {
+    display: none;
   }
 
   .footer-bottom {
-    height: auto;
-    padding-top: 0.75rem;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    padding: 32px 14px 16px;
+    gap: 24px;
+  }
+
+  .footer-brand address,
+  .footer-col h4 {
+    font-size: 1rem;
+  }
+
+  .footer-brand address {
+    line-height: 1.35;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    font-size: 0.95rem;
+  }
+
+  .footer-bottom {
+    padding: 0 0 16px;
+    gap: 10px;
+  }
+
+  .footer-bottom p,
+  .footer-bottom nav {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom nav {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

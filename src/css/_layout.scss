@@ -2,7 +2,16 @@
 // LAYOUT
 // ===============================
 
+// Ta bort max-width från main så bakgrundsfärger går kant till kant
 main {
+  width: 100%;
+}
+ 
+// Återanvändbar inner-wrapper — används inuti sektioner
+// för att begränsa textinnehållet till 1440px
+.section-inner {
   max-width: 1440px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }

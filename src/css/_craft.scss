@@ -126,20 +126,20 @@
 
   /* Höjden måste rymma bild + text staplade */
   .color-box {
-    height: 900px;
-    margin-top: 200px;
+    height: 700px;
+    margin-top: 250px;
   }
 
   /* Gör om till en kolumn och dra upp i color-box */
   .craft-container {
     grid-template-columns: 1fr;
-    margin-top: -820px; /* justerat för ny color-box höjd */
-    margin-left: 0;
+    margin-top: -858px;
   }
 
   .craft-picture {
     grid-column: 1 / -1; /* full bredd */
     margin-bottom: 20px;
+    justify-self: center;
   }
 
   .craft-text {
@@ -151,13 +151,21 @@
     align-items: center; /* centrerar knappen */
   }
 
+  .heading-2 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
   /* body-text ska inte ha vänstermarginal när centrerat */
   .craft-text .body-text {
     margin-left: 0;
   }
 
   .craft-flower {
-    display: none;
+    grid-column: 1 / -1;
+    margin-top: -300px; /* justera detta värde tills blomman hamnar rätt */
+    margin-left: auto;
+    width: 350px;
   }
 }
 

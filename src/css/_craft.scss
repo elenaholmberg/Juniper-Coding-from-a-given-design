@@ -4,6 +4,7 @@
 
 .craft {
   margin-top: 150px;
+  height: 920px;
 }
 
 /* =========================
@@ -25,10 +26,8 @@
 .craft-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-
   margin-top: -730px;
   margin-left: 20px;
-
   position: relative;
   z-index: 1;
 }
@@ -51,11 +50,9 @@
 
 .craft-text {
   grid-column: 7 / span 5;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding-bottom: 150px;
   color: #735711;
 }
@@ -72,7 +69,6 @@
   margin-top: 0;
   margin-left: 10px;
   margin-bottom: 40px;
-
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -88,13 +84,10 @@
 .button-primary {
   background-color: #735711;
   color: #fff;
-
   border: none;
   cursor: pointer;
-
   width: 172px;
   height: 50px;
-
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -109,10 +102,8 @@
 
 .craft-flower {
   grid-column: 8 / span 12;
-
   position: relative;
   z-index: 2;
-
   margin-top: -300px;
   margin-left: 40px;
 }
@@ -123,29 +114,25 @@
 
 @media (max-width: 1024px) {
   .craft {
+    height: 720px;
     margin-top: 100px;
     margin-right: 45px;
     margin-left: 45px;
   }
 
-  .body-text-mobile {
-    display: none;
-  }
-  /* Höjden måste rymma bild + text staplade */
   .color-box {
     height: 700px;
     margin-top: 250px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
-  /* Gör om till en kolumn och dra upp i color-box */
   .craft-container {
     grid-template-columns: 1fr;
     margin-top: -858px;
   }
 
   .craft-picture {
-    grid-column: 1 / -1; /* full bredd */
+    grid-column: 1 / -1;
     margin-bottom: 20px;
     justify-self: center;
   }
@@ -156,22 +143,21 @@
     padding-left: 200px;
     padding-right: 200px;
     text-align: left;
-    align-items: center; /* centrerar knappen */
+    align-items: center;
   }
 
-  .heading-2 {
-    margin-bottom: 20px;
-    margin-top: 0px;
-  }
-
-  /* body-text ska inte ha vänstermarginal när centrerat */
   .craft-text .body-text {
     margin-left: 0;
   }
 
+  .heading-2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
   .craft-flower {
     grid-column: 1 / -1;
-    margin-top: -300px; /* justera detta värde tills blomman hamnar rätt */
+    margin-top: -300px;
     margin-left: auto;
     width: 350px;
   }
@@ -183,9 +169,11 @@
 
 @media (max-width: 768px) {
   .craft {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    margin-right: 0;
+    margin-left: 0;
+    position: relative;
   }
 
   .color-box {
@@ -214,6 +202,10 @@
     align-items: center;
   }
 
+  .body-text {
+    display: none;
+  }
+
   .body-text-mobile {
     display: block;
     margin-top: 0;
@@ -229,14 +221,10 @@
     text-align: left;
   }
 
-  .body-text {
-    display: none;
-  }
-
   .craft-flower {
-    grid-column: 1 / -1;
-    margin-top: -170px; /* justera detta värde tills blomman hamnar rätt */
-    margin-left: auto;
-    width: 350px;
+    position: absolute;
+    bottom: -320px;
+    right: 0;
+    z-index: 2;
   }
 }

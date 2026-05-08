@@ -332,3 +332,70 @@
     z-index: 2;
   }
 }
+
+/* ================================
+   RESPONSIVE – SMALL MOBIL (0px≤479px)
+================================ */
+
+@media (max-width: 479px) {
+  .craft {
+    margin-top: 0;
+    margin-bottom: 120px;
+
+    position: relative;
+  }
+
+  .color-box {
+    height: 650px;
+    margin-top: 200px;
+  }
+
+  .craft-container {
+    grid-template-columns: 1fr;
+    margin-top: -700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .craft-image {
+    border-radius: 14px;
+    justify-self: center;
+    margin-top: -80px;
+  }
+
+  .craft-text {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .body-text {
+    display: none;
+  }
+
+  .body-text-mobile {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .craft-flower {
+    width: 250px;
+    position: absolute;
+    bottom: -250px;
+    right: 0;
+    z-index: 2;
+  }
+}

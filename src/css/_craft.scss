@@ -144,7 +144,7 @@
 }
 
 /* ================================
-   RESPONSIVE – TABLET (≤1024px)
+   RESPONSIVE – LARGE TABLET (834px≤1024px)
 ================================ */
 
 @media (max-width: 1023px) {
@@ -176,8 +176,8 @@
   .craft-text {
     grid-column: 1 / -1;
     padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 120px;
+    padding-right: 110px;
     text-align: left;
     align-items: center;
   }
@@ -191,19 +191,86 @@
     margin-top: 0;
   }
 
+  .body-text-mobile {
+    display: none;
+  }
+
+  .craft-flower {
+    width: 350px;
+    position: absolute;
+
+    bottom: -230px;
+    right: -26px;
+    z-index: 2;
+  }
+}
+
+/* ================================
+   RESPONSIVE – SMALL TABLET (768PX≤834px) (IPAD MINI is 768px,IPAD PRO 11"is 834px)
+================================ */
+
+@media (max-width: 834px) {
+  .craft {
+    height: 750px;
+    margin-top: 100px;
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+
+  .color-box {
+    height: 700px;
+    margin-top: 250px;
+    margin-left: 0;
+  }
+
+  .craft-container {
+    grid-template-columns: 1fr;
+    margin-top: -858px;
+    padding: 0;
+  }
+
+  .craft-picture {
+    width: 85%;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+
+  .craft-text {
+    grid-column: 1 / -1;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .craft-text .body-text {
+    margin-left: 0;
+  }
+
+  .heading-2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .body-text-mobile {
+    display: none;
+  }
+
   .craft-flower {
     grid-column: 1 / -1;
-    margin-top: -300px;
+    margin-top: -240px;
     margin-left: auto;
     width: 350px;
   }
 }
 
 /* ================================
-   RESPONSIVE – LARGE MOBIL (768px≤848px)
+   RESPONSIVE – LARGE MOBIL (650px≤768px)
 ================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .craft {
     margin-top: 0;
     margin-bottom: 80px;
@@ -248,7 +315,7 @@
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: 160px;
-    margin-right: 160px;
+    margin-right: 140px;
     font-family: 'Open Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -265,27 +332,27 @@
     z-index: 2;
   }
 }
-
 /* ================================
-   RESPONSIVE – MOBIL (480px≤768px)
+   RESPONSIVE – LARGE MOBILE (540px≤650px)
 ================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .craft {
+    height: 680px;
     margin-top: 0;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 
     position: relative;
   }
 
   .color-box {
-    height: 720px;
+    height: 650px;
     margin-top: 200px;
   }
 
   .craft-container {
     grid-template-columns: 1fr;
-    margin-top: -770px;
+    margin-top: -700px;
     margin-left: 20px;
     margin-right: 20px;
     margin-left: 20px;
@@ -305,7 +372,6 @@
     text-align: center;
     align-items: center;
   }
-
   .body-text {
     display: none;
   }
@@ -314,8 +380,8 @@
     display: block;
     margin-top: 0;
     margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Open Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -326,19 +392,91 @@
   }
 
   .craft-flower {
+    width: 250px;
     position: absolute;
-    bottom: -350px;
-    right: 0;
+
+    bottom: -190px;
+    right: -22px;
+    z-index: 2;
+  }
+}
+/* ================================
+   RESPONSIVE – MEDIUM MOBILE (479px≤540px)
+================================ */
+
+@media (max-width: 540px) {
+  .craft {
+    height: 650px;
+    margin-top: 0;
+    margin-bottom: 70px;
+
+    position: relative;
+  }
+
+  .color-box {
+    height: 660px;
+    margin-top: 200px;
+  }
+
+  .craft-container {
+    grid-template-columns: 1fr;
+    margin-top: -700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .craft-image {
+    border-radius: 14px;
+    justify-self: center;
+    margin-top: -80px;
+  }
+
+  .craft-text {
+    grid-column: 1 / -1;
+    padding-bottom: 40px;
+
+    text-align: center;
+    align-items: center;
+  }
+  .body-text {
+    display: none;
+  }
+
+  .body-text-mobile {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .craft-flower {
+    width: 250px;
+    position: absolute;
+
+    bottom: -200px;
+    right: -22px;
     z-index: 2;
   }
 }
 
 /* ================================
-   RESPONSIVE – SMALL MOBIL (0px≤479px)
+   RESPONSIVE – SMALL MOBILE (386px≤479px) (386px is the width of iPhone SE)
 ================================ */
 
 @media (max-width: 479px) {
   .craft {
+    overflow: visible;
+    height: 600px;
     margin-top: 0;
     margin-bottom: 120px;
 
@@ -394,8 +532,9 @@
   .craft-flower {
     width: 250px;
     position: absolute;
-    bottom: -250px;
-    right: 0;
+
+    bottom: -230px;
+    right: -22px;
     z-index: 2;
   }
 }

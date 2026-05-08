@@ -9,11 +9,15 @@
     background-color: var(--sea-breeze);
     z-index: 1000;
     width: 100%;
+    left: 0;
+    right: 0;
     transform: translateY(100%);
     opacity: 0;
     transition: 
         transform 0.5s ease,
         opacity 0.5s ease;
+    
+
 }
 
 /* Show the cookie banner when the "show" class is added */
@@ -90,4 +94,35 @@
     gap: 40px;
     align-self: end;
     flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+    .cookie-content {
+        flex-direction: column;
+        padding: 20px 40px 40px 40px;
+    }
+
+    .cookie-buttons {
+        padding-top: 20px;
+        align-self: center;
+    }
+
+    @media (max-width: 768px) {
+        .cookie-content {
+            align-self: center;
+        }
+        .cookie-text {
+            align-items: center;
+            text-align: center;
+            padding-top: 54px;
+            gap: 40px;
+        }
+        .cookie-buttons {
+            flex-direction: column;
+            gap: 20px;
+            align-self: center;
+            padding: 40px 60px 40px 60px;
+        }
+        
+    }
 }

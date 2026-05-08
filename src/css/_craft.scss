@@ -115,48 +115,9 @@
   margin-top: -300px;
   margin-left: 40px;
 }
+
 /* ================================
-   RESPONSIVE – LARGE DESKTOP (1440px≤DEFAULT MODEpx)
-================================ */
-
-@media (max-width: 1440px) {
-  .craft-container {
-    grid-template-columns: 1fr 1fr;
-    margin-top: -730px;
-    margin-left: 0;
-    padding: 0 clamp(20px, 4vw, 60px);
-  }
-
-  .craft-picture {
-    grid-column: 1 / 2;
-  }
-
-  .color-box {
-    height: 864px;
-    margin-top: 250px;
-    margin-left: 0;
-  }
-  .heading-2 {
-    margin-top: 0;
-  }
-  .craft-text {
-    grid-column: 2 / 3;
-    padding-bottom: clamp(40px, 6vw, 150px);
-    padding-left: clamp(10px, 2vw, 30px);
-    padding-right: clamp(10px, 2vw, 30px);
-  }
-
-  .craft-flower {
-    width: 400px;
-    position: absolute;
-
-    bottom: -330px;
-    right: -26px;
-    z-index: 2;
-  }
-}
-/* ================================
-   RESPONSIVE – XL DESKTOP (1580px≤1280px)
+   RESPONSIVE – XL DESKTOP (1580px≤
 ================================ */
 
 /* =========================
@@ -273,7 +234,7 @@
     margin-left: 40px;
   }
   /* ================================
-   RESPONSIVE – LARGE DESKTOP (1440px≤DEFAULT MODEpx)
+   RESPONSIVE – LARGE DESKTOP (1440px≤)
 ================================ */
 
   @media (max-width: 1440px) {

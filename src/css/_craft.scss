@@ -1,9 +1,6 @@
 /* =========================
-   DEFAULT STYLES
-========================= */
-
-/* =========================
-   SECTION: CRAFT
+   CRAFT SECTION
+   Default styles (desktop first)
 ========================= */
 
 .craft {
@@ -11,9 +8,10 @@
   margin-bottom: 92px;
 }
 
-/* =========================
-   BACKGROUND BOX
-========================= */
+/* -------------------------
+   Background box
+------------------------- */
+
 .color-box {
   background-color: #fff1cd;
   width: 100%;
@@ -25,9 +23,10 @@
   justify-content: center;
   padding: clamp(40px, 6.39vw, 92px) 0;
 }
-/* =========================
-   CONTAINER GRID
-========================= */
+
+/* -------------------------
+   Container grid
+------------------------- */
 
 .craft-container {
   display: grid;
@@ -37,9 +36,9 @@
   padding: 0 clamp(20px, 2vw, 40px);
 }
 
-/* =========================
-   IMAGE
-========================= */
+/* -------------------------
+   Image
+------------------------- */
 
 .craft-picture {
   grid-column: 2 / span 5;
@@ -52,9 +51,9 @@
   display: block;
 }
 
-/* =========================
-   TEXT BLOCK
-========================= */
+/* -------------------------
+   Text block
+------------------------- */
 
 .craft-text {
   grid-column: 7 / span 5;
@@ -66,13 +65,9 @@
   color: #735711;
 }
 
-.body-text-mobile {
-  display: none;
-}
-
-/* =========================
-   TYPOGRAPHY
-========================= */
+/* -------------------------
+   Typography
+------------------------- */
 
 .body-text {
   margin-top: 0;
@@ -86,9 +81,13 @@
   font-size: clamp(1rem, 1.39vw, 1.25rem);
 }
 
-/* =========================
-   BUTTON
-========================= */
+.body-text-mobile {
+  display: none;
+}
+
+/* -------------------------
+   Button
+------------------------- */
 
 .button-primary {
   background-color: #735711;
@@ -105,9 +104,9 @@
   font-size: clamp(1rem, 1.39vw, 1.25rem);
 }
 
-/* =========================
-   DECOR ELEMENT
-========================= */
+/* -------------------------
+   Decor element
+------------------------- */
 
 .craft-flower {
   position: absolute;
@@ -117,32 +116,39 @@
   z-index: 2;
 }
 
-//MELLAN 834 OCH 1024
+/* =========================
+   RESPONSIVE – TABLET
+   max-width: 1023px
+========================= */
+
 @media (max-width: 1023px) {
   .craft {
     height: 720px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: 45px;
     margin-left: 45px;
     margin-bottom: 190px;
     position: relative;
   }
-  .craft-container {
-    padding-top: 0;
-    position: absolute;
-    top: -150px;
+
+  .margin {
+    height: 92px;
   }
+
   .color-box {
     height: 670px;
-    margin-top: 0px;
-    margin-left: 0;
+    margin-top: 0;
     padding: 0;
     position: absolute;
     top: 150px;
   }
-  .margin {
-    height: 70px;
+
+  .craft-container {
+    position: absolute;
+    top: -150px;
+    padding-top: 0;
   }
+
   .craft-picture {
     grid-column: 1 / -1;
     margin-bottom: 20px;
@@ -154,187 +160,143 @@
     padding-bottom: 50px;
     padding-left: 120px;
     padding-right: 110px;
-    text-align: left;
     align-items: center;
   }
 
   .heading-2 {
-    margin-bottom: 20px;
     margin-top: 0;
-  }
-
-  /* =========================
-BUTTON========================= */
-  .button-primary {
-    background-color: #735711;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    width: clamp(140px, 21.58vw, 180px);
-    height: clamp(42px, 4vw, 50px);
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'wdth' 100;
-    font-size: clamp(1rem, 1.39vw, 1.25rem);
-  }
-
-  /* =========================
-   DECOR ELEMENT
-========================= */
-
-  .craft-flower {
-    position: absolute;
-    bottom: clamp(-220px, -17.6vw, -180px);
-    right: clamp(-30px, -1.76vw, -18px);
-    width: clamp(308px, 34.41vw, 352px);
-    z-index: 2;
+    margin-bottom: 20px;
   }
 
   .body-text {
     line-height: 1.7;
   }
+
+  .button-primary {
+    width: clamp(140px, 21.58vw, 180px);
+    height: clamp(42px, 4vw, 50px);
+  }
+
+  .craft-flower {
+    bottom: clamp(-220px, -17.6vw, -180px);
+    right: clamp(-30px, -1.76vw, -18px);
+    width: clamp(308px, 34.41vw, 352px);
+  }
 }
 
-//MELLAN 611 och 834
+/* =========================
+   RESPONSIVE – SMALL TABLET
+   max-width: 834px
+========================= */
+
 @media (max-width: 834px) {
   .craft {
     height: 690px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 250px;
+    margin: 0 0 250px 0;
     position: relative;
   }
-  .craft-container {
-    padding-top: 0;
-    position: absolute;
-    top: -160px;
+
+  .margin {
+    height: 70px;
   }
+
   .color-box {
     height: 680px;
-    margin-top: 0px;
-    margin-left: 0;
     padding: 0;
     position: absolute;
     top: 160px;
   }
-  .margin {
-    height: 35px;
+
+  .craft-container {
+    position: absolute;
+    top: -160px;
+    padding-top: 0;
   }
+
   .craft-picture {
     grid-column: 1 / -1;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     justify-self: center;
   }
 
   .craft-text {
     grid-column: 1 / -1;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: left;
+    padding: 0 100px 50px;
     align-items: center;
   }
 
   .heading-2 {
-    margin-bottom: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 3.125rem; //50px
+    font-size: 3.125rem;
     font-style: normal;
   }
 
-  .body-text-mobile {
-    display: none;
-  }
-  /* =========================
-BUTTON========================= */
   .button-primary {
-    background-color: #735711;
-    color: #fff;
-    border: none;
-    cursor: pointer;
     width: clamp(150px, 21.58vw, 190px);
-    height: clamp(42px, 4vw, 50px);
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'wdth' 100;
-    font-size: clamp(1rem, 1.39vw, 1.25rem);
   }
-
-  /* =========================
-   DECOR ELEMENT
-========================= */
 
   .craft-flower {
-    position: absolute;
     bottom: clamp(-180px, -17.6vw, -140px);
     right: clamp(0px, -1.76vw, 12px);
     width: clamp(283px, 31.6vw, 323px);
-    z-index: 2;
   }
 }
 
-//MELLAN 386 och 611
+/* =========================
+   RESPONSIVE – MOBILE
+   max-width: 611px
+========================= */
+
 @media (max-width: 611px) {
   .craft {
     height: 690px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     position: relative;
   }
-  .craft-container {
-    padding-top: 0;
-    position: absolute;
-    top: -130px;
+
+  .margin {
+    height: 35px;
   }
+
   .color-box {
     height: 540px;
-    margin-top: 0px;
-    margin-left: 0;
     padding: 0;
     position: absolute;
     top: 130px;
   }
-  .margin {
-    height: 35px;
+
+  .craft-container {
+    position: absolute;
+    top: -130px;
+    padding-top: 0;
   }
+
   .craft-picture {
     grid-column: 1 / -1;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     justify-self: center;
   }
 
   .craft-text {
     grid-column: 1 / -1;
-    padding-bottom: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: left;
+    padding: 0 40px 50px;
     align-items: center;
   }
 
   .heading-2 {
-    margin-bottom: 0px;
     margin-top: 10px;
+    margin-bottom: 0;
     font-family: 'Playfair Display', serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 3.125rem; //50px
+    font-size: 3.125rem;
     font-style: normal;
   }
+
   .body-text {
     display: none;
   }
@@ -350,32 +312,14 @@ BUTTON========================= */
     padding-bottom: 25px;
     line-height: 1.7;
   }
-  /* =========================
-BUTTON========================= */
+
   .button-primary {
-    background-color: #735711;
-    color: #fff;
-    border: none;
-    cursor: pointer;
     width: clamp(150px, 21.58vw, 190px);
-    height: clamp(42px, 4vw, 50px);
-    font-family: 'Open Sans', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'wdth' 100;
-    font-size: clamp(1rem, 1.39vw, 1.25rem);
   }
 
-  /* =========================
-   DECOR ELEMENT
-========================= */
-
   .craft-flower {
-    position: absolute;
     bottom: clamp(-180px, -17.6vw, -140px);
     right: clamp(0px, -1.76vw, 12px);
     width: clamp(236px, 26.33vw, 269px);
-    z-index: 2;
   }
 }

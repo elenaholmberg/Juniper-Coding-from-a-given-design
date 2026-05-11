@@ -1776,6 +1776,78 @@ main {
   z-index: 2;
 }
 
+@media (max-width: 1023px) {
+  .craft {
+    height: 720px;
+    margin-top: 0px;
+    margin-right: 45px;
+    margin-left: 45px;
+    margin-bottom: 190px;
+    position: relative;
+  }
+  .craft-container {
+    padding-top: 0;
+    position: absolute;
+    top: -150px;
+  }
+  .color-box {
+    height: 670px;
+    margin-top: 0px;
+    margin-left: 0;
+    padding: 0;
+    position: absolute;
+    top: 150px;
+  }
+  .margin {
+    height: 70px;
+  }
+  .craft-picture {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    justify-self: center;
+  }
+  .craft-text {
+    grid-column: 1/-1;
+    padding-bottom: 50px;
+    padding-left: 120px;
+    padding-right: 110px;
+    text-align: left;
+    align-items: center;
+  }
+  .heading-2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  /* =========================
+  BUTTON========================= */
+  .button-primary {
+    background-color: #735711;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: clamp(140px, 21.58vw, 180px);
+    height: clamp(42px, 4vw, 50px);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: clamp(1rem, 1.39vw, 1.25rem);
+  }
+  /* =========================
+     DECOR ELEMENT
+  ========================= */
+  .craft-flower {
+    position: absolute;
+    bottom: clamp(-220px, -17.6vw, -180px);
+    right: clamp(-30px, -1.76vw, -18px);
+    width: clamp(308px, 34.41vw, 352px);
+    z-index: 2;
+  }
+  .body-text {
+    line-height: 1.7;
+  }
+}
 .cookie-banner {
   position: fixed;
   bottom: 0;

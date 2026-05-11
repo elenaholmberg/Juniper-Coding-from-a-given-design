@@ -1860,15 +1860,15 @@ main {
   .craft-container {
     padding-top: 0;
     position: absolute;
-    top: -230px;
+    top: -160px;
   }
   .color-box {
-    height: 640px;
+    height: 680px;
     margin-top: 0px;
     margin-left: 0;
     padding: 0;
     position: absolute;
-    top: 230px;
+    top: 160px;
   }
   .margin {
     height: 35px;
@@ -1883,8 +1883,8 @@ main {
   .craft-text {
     grid-column: 1/-1;
     padding-bottom: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     text-align: left;
     align-items: center;
   }

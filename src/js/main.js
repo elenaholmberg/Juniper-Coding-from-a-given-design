@@ -1,5 +1,6 @@
-import './photo-carousel.js';
-import './cookies.js';
+import "./photo-carousel.js";
+import "./cookies.js";
+import "../css/main.scss";
 
 console.log("JS loaded");
 
@@ -31,4 +32,3 @@ hamburger.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 backdrop.addEventListener("click", closeMenu); // klick på blur stänger menyn
 menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
-

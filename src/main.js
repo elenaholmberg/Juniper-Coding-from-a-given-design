@@ -1,4 +1,3 @@
-import "./css/main.scss";
 import "./js/photo-carousel.js";
 import "./js/cookies.js";
 

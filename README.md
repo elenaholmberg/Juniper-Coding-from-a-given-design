@@ -99,6 +99,7 @@ Resultatet hamnar i `dist/`.
 
 ```
 ├── src/
+├── main.js                     # JavaScript
 │   ├── css/
 │   │   ├── main.scss           # Importerar alla partials
 │   │   ├── _variables.scss     # Färger och CSS-variabler
@@ -117,9 +118,8 @@ Resultatet hamnar i `dist/`.
 │   │   ├── _buttons.scss       # Knappstilar
 │   │   └── _responsive.scss    # Globala responsiva regler
 │   └── js/
-│       ├── main.js             # JavaScript
 │       ├── cookies.js          # Cookie-banner och samtyckeshantering
-│       └── photo-carousel.js    # Bildkarusell/fotogalleri
+│       └── photo-carousel.js   # Bildkarusell/fotogalleri
 ├── img/
 │   ├── png/                    # Produktbilder och fotografier
 │   └── svg/                    # Logotyper och illustrationer

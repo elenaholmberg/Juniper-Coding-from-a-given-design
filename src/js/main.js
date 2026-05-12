@@ -1,5 +1,6 @@
 import "./photo-carousel.js";
 import "./cookies.js";
+import "../css/main.scss";
 
 console.log("JS loaded");
 

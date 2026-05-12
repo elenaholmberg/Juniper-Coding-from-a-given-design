@@ -1,7 +1,7 @@
-import "../src/js/photo-carousel.js";
-import "../src/js/cookies.js";
+import "./css/main.scss";
+import "./js/photo-carousel.js";
+import "./js/cookies.js";
 
-import "./css/main.scss"; // Endast för utveckling med Vite
 console.log("JS loaded");
 
 // ===============================

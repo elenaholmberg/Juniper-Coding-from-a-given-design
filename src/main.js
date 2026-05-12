@@ -1,6 +1,6 @@
-import "./photo-carousel.js";
-import "./cookies.js";
-import "../css/main.scss";
+import "../src/css/main.scss";
+import "../src/js/photo-carousel.js";
+import "../src/js/cookies.js";
 
 console.log("JS loaded");
 

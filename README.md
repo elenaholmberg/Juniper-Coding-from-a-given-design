@@ -10,19 +10,28 @@
 ## Innehåll
 
 - [Om projektet](#om-projektet)
+- [Funktioner](#funktioner)
 - [Design](#design)
 - [Skärmdumpar](#skärmdumpar)
 - [Tech stack](#tech-stack)
+- [Lighthouse-rapport](#lighthouse-rapport)
 - [Kom igång](#kom-igång)
 - [Projektstruktur](#projektstruktur)
 - [Responsivitet](#responsivitet)
 - [Gruppen](#gruppen)
 
----
-
 ## Om projektet
 
 Juniper AB är ett fiktivt svenskt företag som tillverkar alkoholfria botaniska drycker inspirerade av nordisk natur. Uppgiften bestod i att ta emot en färdig Figma-design från en annan grupp och implementera den som en fungerande, responsiv webbplats.
+
+## Funktioner
+
+- Responsiv design
+- Hamburger-meny
+- Cookie-banner
+- Produktcarousel med Swiper.js
+- Tillgänglighetsanpassad navigation
+- Fluid typografi med clamp()
 
 ---
 
@@ -62,6 +71,14 @@ Implementerad webbplats:
 
 ---
 
+## Lighthouse-rapport
+
+Resultat från Lighthouse-test i Chrome DevTools för desktop- och mobilversionen.
+
+| Desktop                                            | Mobile                                           |
+| -------------------------------------------------- | ------------------------------------------------ |
+| ![Lighthouse desktop](docs/lighthouse-desktop.png) | ![Lighthouse mobile](docs/lighthouse-mobile.png) |
+
 ## Kom igång
 
 ### Förutsättningar
@@ -74,7 +91,7 @@ Implementerad webbplats:
 ```bash
 # Klona repot
 git clone https://github.com/Medieinstitutet/fed25d-grafiska-verktyg-vector-graphics.git
-cd REPO-NAMN
+cd fed25d-grafiska-verktyg-vector-graphics
 
 # Installera beroenden
 npm install
@@ -98,36 +115,42 @@ Resultatet hamnar i `dist/`.
 ## Projektstruktur
 
 ```
+## Projektstruktur
+
 ├── src/
-├── main.js                     # JavaScript
+│   ├── main.js                  # Huvudfil för JavaScript
+│   │
 │   ├── css/
-│   │   ├── main.scss           # Importerar alla partials
-│   │   ├── _variables.scss     # Färger och CSS-variabler
-│   │   ├── _spacing.scss       # Spacing-tokens
-│   │   ├── _typography.scss    # Typografi
-│   │   ├── _layout.scss        # Grundlayout
-│   │   ├── _header.scss        # Header & navigation
-│   │   ├── _hero.scss          # Hero-sektion
-│   │   ├── _craft.scss         # Hantverk-sektion
-│   │   ├── _products.scss      # Produkter / Swiper
-│   │   ├── _inspiration.scss   # Hitta inspiration
-│   │   ├── _find-us.scss       # Hitta oss / butikslogotyper
-│   │   ├── _newsletter.scss    # Nyhetsbrev
-│   │   ├── _footer.scss        # Footer
-│   │   ├── _cookies.scss       # Cookie-banner
-│   │   ├── _buttons.scss       # Knappstilar
-│   │   └── _responsive.scss    # Globala responsiva regler
+│   │   ├── main.scss            # Importerar alla partials
+│   │   ├── _variables.scss      # Färger och CSS-variabler
+│   │   ├── _spacing.scss        # Spacing-tokens
+│   │   ├── _typography.scss     # Typografi
+│   │   ├── _layout.scss         # Grundlayout
+│   │   ├── _header.scss         # Header & navigation
+│   │   ├── _hero.scss           # Hero-sektion
+│   │   ├── _craft.scss          # Hantverk-sektion
+│   │   ├── _products.scss       # Produkter / Swiper
+│   │   ├── _inspiration.scss    # Hitta inspiration
+│   │   ├── _find-us.scss        # Hitta oss / butikslogotyper
+│   │   ├── _newsletter.scss     # Nyhetsbrev
+│   │   ├── _footer.scss         # Footer
+│   │   ├── _cookies.scss        # Cookie-banner
+│   │   ├── _buttons.scss        # Knappstilar
+│   │   └── _responsive.scss     # Responsiva regler
+│   │
 │   └── js/
-│       ├── cookies.js          # Cookie-banner och samtyckeshantering
-│       └── photo-carousel.js   # Bildkarusell/fotogalleri
+│       ├── cookies.js           # Cookie-banner
+│       └── photo-carousel.js    # Bildkarusell
+│
 ├── img/
-│   ├── png/                    # Produktbilder och fotografier
-│   └── svg/                    # Logotyper och illustrationer
-├── docs/                       # Skärmdumpar (läggs till manuellt)
+│   ├── png/                     # Fotografier och produktbilder
+│   └── svg/                     # Illustrationer och logotyper
+│
+├── docs/                        # README-skärmdumpar
 ├── index.html
-├── favicon.ico
 ├── vite.config.js
-└── package.json
+├── package.json
+└── README.md
 ```
 
 ---
@@ -149,12 +172,12 @@ Responsiviteten hanteras per komponent i respektive SCSS-partial med `clamp()` f
 
 ## Gruppen
 
-| **Bledd & Trim**
-| -------------------------------------------------------
-| [Elena Holmberg](https://github.com/elenaholmberg)
-| [Jenny Gustafsson](https://github.com/jennygustafsson)
-| [Minai Karlsson](https://github.com/minza-42)
-| [Rasmus Fransson](https://github.com/RasmusFranssonHub)
+### Bledd & Trim
+
+- [Elena Holmberg](https://github.com/elenaholmberg)
+- [Jenny Gustafsson](https://github.com/jennygustafsson)
+- [Minai Karlsson](https://github.com/minza-42)
+- [Rasmus Fransson](https://github.com/RasmusFranssonHub)
 
 ---
 

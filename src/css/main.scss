@@ -5,7 +5,6 @@
 @use './_header' as *;
 @use './_layout' as *;
 @use './_spacing' as *;
-@use './_responsive' as *;
 @use './_newsletter' as *;
 @use './_products' as *;
 @use './_inspiration' as *;
@@ -18,5 +17,5 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; // FIX: förhindrar horisontell scroll från element som sticker ut
+  overflow-x: hidden; /* FIX: förhindrar horisontell scroll från element som sticker ut */
 }

@@ -1,6 +1,6 @@
-// ===============================
-// HEADER
-// ===============================
+/* ===============================
+HEADER
+=============================== */
 
 header {
   background-color: var(--sea-breeze);
@@ -16,7 +16,7 @@ nav {
   padding: 1.2rem 2rem;
 }
 
-// ---- Nav länklista (gemensam) ----
+/* ---- Nav länklista (gemensam) ---- */
 .nav-links {
   display: flex;
   list-style: none;
@@ -36,7 +36,7 @@ nav {
   }
 }
 
-// ---- Logo i mitten ----
+/* ---- Logo i mitten ---- */
 .nav-logo {
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ nav {
   }
 }
 
-// ---- Hamburger (dold på desktop) ----
+/* ---- Hamburger (dold på desktop) ---- */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -70,11 +70,11 @@ nav {
   }
 }
 
-// ===============================
-// MOBILE MENU — backdrop overlay
-// ===============================
+/* ===============================
+MOBILE MENU — backdrop overlay
+===============================*/
 
-// Mörk blur-overlay bakom menyn (endast tablet)
+/* Mörk blur-overlay bakom menyn (endast tablet) */
 .mobile-menu-backdrop {
   display: none;
   position: fixed;
@@ -96,9 +96,9 @@ nav {
   }
 }
 
-// ===============================
-// MOBILE MENU — sidopanel
-// ===============================
+/* ===============================
+MOBILE MENU — sidopanel
+=============================== */
 
 .mobile-menu {
   position: fixed;
@@ -112,10 +112,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  text-align: center;        // centrera all text
+  text-align: center;        /* centrera all text */
   padding: 2rem 1.5rem 2rem;
   box-sizing: border-box;
-  overflow-x: hidden;        // ingen horisontell scroll
+  overflow-x: hidden;        /* ingen horisontell scroll */
   overflow-y: auto;
   overscroll-behavior: contain;
 
@@ -130,7 +130,7 @@ nav {
     transform: translateX(0);
   }
 
-  // Stäng-knapp (X) överst till vänster
+  /* Stäng-knapp (X) överst till vänster */
   .mobile-menu-close {
     align-self: flex-start;
     background: none;
@@ -143,7 +143,7 @@ nav {
     margin-bottom: 1.5rem;
   }
 
-  // Logo
+  /* Logo */
   .mobile-menu-logo {
     margin-bottom: 1.5rem;
 
@@ -153,7 +153,7 @@ nav {
     }
   }
 
-  // HEM-rubrik
+  /* HEM-rubrik */
   .mobile-menu-heading {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -163,7 +163,7 @@ nav {
     margin-bottom: 1.5rem;
   }
 
-  // Länklista
+  /* Länklista */
   .mobile-menu-links {
     list-style: none;
     padding: 0;
@@ -171,7 +171,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;           // ta full bredd så centreringen blir korrekt
+    width: 100%;           /* ta full bredd så centreringen blir korrekt */
     gap: 1.25rem;
 
     a {
@@ -186,7 +186,7 @@ nav {
     }
   }
 
-  // Adressblock
+  /* Adressblock */
   .mobile-menu-address {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.95rem;
@@ -207,7 +207,7 @@ nav {
     }
   }
 
-  // Juridiska länkar + copyright
+  /* Juridiska länkar + copyright */
   .mobile-menu-footer {
     display: flex;
     flex-direction: column;
@@ -237,7 +237,7 @@ nav {
   }
 }
 
-// Säkerställ att alla mobil-menyelement tar full bredd och har centrerad text
+/* Säkerställ att alla mobil-menyelement tar full bredd och har centrerad text */
 .mobile-menu-links,
 .mobile-menu-address,
 .mobile-menu-footer,
@@ -247,9 +247,9 @@ nav {
   text-align: center;
 }
 
-// ===============================
-// RESPONSIVE — desktop (≥1025px)
-// ===============================
+/* ===============================
+RESPONSIVE — desktop (≥1025px)
+=============================== */
 
 @media (min-width: 1025px) {
   nav {
@@ -259,9 +259,9 @@ nav {
   .mobile-menu { display: none !important; }
 }
 
-// ===============================
-// RESPONSIVE — iPad (769px–1024px)
-// ===============================
+/* ===============================
+RESPONSIVE — iPad (769px–1024px)
+ =============================== */
 
 @media (max-width: 1024px) and (min-width: 769px) {
 
@@ -283,20 +283,20 @@ nav {
     img { height: 52px; }
   }
 
-  // Tablet: menyn tar bara halva bredden
+  /* Tablet: menyn tar bara halva bredden */
   .mobile-menu {
     width: 50%;
   }
 
-  // Visa backdrop på tablet
+  /* Visa backdrop på tablet */
   .mobile-menu-backdrop {
     display: block;
   }
 }
 
-// ===============================
-// RESPONSIVE — mobil (≤768px)
-// ===============================
+/* ===============================
+RESPONSIVE — mobil (≤768px)
+=============================== */
 
 @media (max-width: 768px) {
 

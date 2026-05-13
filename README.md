@@ -41,6 +41,8 @@ Designen togs fram av gruppen **Vector Graphics** i Figma och täcker tre breakp
 
 ### Figma-design
 
+[Öppna design i Figma](https://www.figma.com/design/2t3K3gyXwNeQmcQCFS5XVX/Vector-Graphics---Juniper?node-id=0-1&t=Opt6QQfZVJa6XHwu-1)
+
 | Desktop                                  | Surfplatta                             | Mobil                                  |
 | ---------------------------------------- | -------------------------------------- | -------------------------------------- |
 | ![Figma desktop](docs/figma-desktop.png) | ![Figma tablet](docs/figma-tablet.png) | ![Figma mobile](docs/figma-mobile.png) |

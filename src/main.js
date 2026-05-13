@@ -4,9 +4,9 @@ import "./js/cookies.js";
 
 console.log("JS loaded");
 
-// ===============================
-// MOBILE MENU
-// ===============================
+/* ===============================
+MOBILE MENU
+=============================== */
 
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");

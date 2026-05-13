@@ -1,35 +1,48 @@
-//================================
-// cookie banner
-//================================
+/*================================
+cookie banner
+================================ */
+
 
 .cookie-banner {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: var(--sea-breeze);
-    z-index: 1000;
-    width: 100%;
-    left: 0;
     right: 0;
+    width: 100%;
+
+    background-color: var(--sea-breeze);
+
+    z-index: 1000;
+
     transform: translateY(100%);
     opacity: 0;
-    transition: 
-        transform 0.5s ease,
-        opacity 0.5s ease;
-    
 
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+        display: none;
 }
 
-/* Show the cookie banner when the "show" class is added */
 .cookie-banner.show {
     transform: translateY(0);
     opacity: 1;
+
+    visibility: visible;
+    pointer-events: auto;
+    display: block;
 }
 
-/* Hide the cookie banner when the "hide" class is added */
 .cookie-banner.hide {
     transform: translateY(100%);
     opacity: 0;
+
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
 }
 
 .cookie-content {
@@ -63,9 +76,11 @@
     gap: 10px;
 }
 
-//================================
-// buttons
-//================================
+/*
+================================
+buttons
+================================
+*/
 
 .cookie-banner button {
     width: 161px;

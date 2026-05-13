@@ -1,7 +1,7 @@
-// ===============================
-// STORES — Du hittar oss här
-// ===============================
-
+/*===============================
+STORES — Du hittar oss här
+=============================== */
+ 
 .stores {
   padding: var(--section-spacing-desktop) var(--container-padding-desktop);
   text-align: center;
@@ -39,41 +39,41 @@
     gap: 4rem;
   }
 
-  // ---- Exakta Figma-mått per logotyp ----
-  .store-logos-row-1 img:nth-child(1) { // Systembolaget
+  /* ---- Exakta Figma-mått per logotyp ---- */
+  .store-logos-row-1 img:nth-child(1) { /* Systembolaget */
     width: 223px;
     height: 113px;
     object-fit: contain;
   }
 
-  .store-logos-row-1 img:nth-child(2) { // Coop
+  .store-logos-row-1 img:nth-child(2) { /* Coop */
     width: 272px;
     height: 113px;
     object-fit: contain;
   }
 
-  .store-logos-row-1 img:nth-child(3) { // Hemköp
+  .store-logos-row-1 img:nth-child(3) { /* Hemköp */
     width: 223px;
     height: 113px;
     object-fit: contain;
   }
 
-  .store-logos-row-2 img:nth-child(1) { // Saluhall (svarta cirkeln)
+  .store-logos-row-2 img:nth-child(1) { /* Saluhall (svarta cirkeln) */
     width: 113px;
     height: 113px;
     object-fit: contain;
   }
 
-  .store-logos-row-2 img:nth-child(2) { // Cajsa Warg
+  .store-logos-row-2 img:nth-child(2) { /* Cajsa Warg */
     width: 223px;
     height: 113px;
     object-fit: contain;
   }
 }
 
-// ===============================
-// RESPONSIVE — Tablet (769px–1024px)
-// ===============================
+/* ===============================
+RESPONSIVE — Tablet (769px–1024px)
+===============================*/
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .stores {
@@ -88,7 +88,7 @@
     .store-logos-row-1 { gap: 2rem; }
     .store-logos-row-2 { gap: 2rem; }
 
-    // Skala ner proportionellt ~75%
+    /* Skala ner proportionellt ~75% */
     .store-logos-row-1 img:nth-child(1) { width: 167px; height: 85px; }
     .store-logos-row-1 img:nth-child(2) { width: 204px; height: 85px; }
     .store-logos-row-1 img:nth-child(3) { width: 167px; height: 85px; }
@@ -97,9 +97,9 @@
   }
 }
 
-// ===============================
-// RESPONSIVE — Mobil (≤768px)
-// ===============================
+/* ===============================
+RESPONSIVE — Mobil (≤768px)
+===============================*/
 
 @media (max-width: 768px) {
   .stores {
@@ -117,7 +117,7 @@
     }
     .store-logos-row-2 { gap: 1.5rem; }
 
-    // Skala ner proportionellt ~50%
+    /* Skala ner proportionellt ~50% */
     .store-logos-row-1 img:nth-child(1) { width: 112px; height: 57px; }
     .store-logos-row-1 img:nth-child(2) { width: 136px; height: 57px; }
     .store-logos-row-1 img:nth-child(3) { width: 112px; height: 57px; }

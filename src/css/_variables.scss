@@ -1,22 +1,25 @@
 :root {
-  // ====================
-  // Primary colors
-  // ====================
+  /* ====================
+  Primary colors
+  ====================*/
+
   --summer-haze: #ffffff;
   --blueberry: #12365c;
 
-  // ====================
-  // Secondary colors
-  // ====================
+  /* ====================
+  Secondary colors
+  ==================== */
+
   --sea-breeze: #c3dbf5;
   --strawberry-icecream: #ffd6df;
   --blueberry-purree: #66000f;
   --warm-elder: #fff1cd;
   --honey-gold: #735711;
 
-  // ====================
-  // Gradients
-  // ====================
+  /* ====================
+  Gradients
+  ==================== */
+  
   --yellow-gradient: linear-gradient(45deg, #fff1cd, #fff6df);
   --pink-gradient: linear-gradient(45deg, #ffd6df, #ffe7ea);
 }

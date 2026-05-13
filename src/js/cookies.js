@@ -4,22 +4,36 @@ const acceptBtn = document.getElementById("acceptCookies");
 
 const moreBtn = document.querySelector(".more-btn");
 
+/* ===============================
+Visa banner endast om användaren
+inte redan accepterat cookies
+=============================== */
 
-// Visa banner när sidan laddas
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    cookieBanner.classList.add("show");
-  }, 300);
+  const cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+  if (!cookiesAccepted) {
+    setTimeout(() => {
+      cookieBanner.classList.add("show");
+    }, 300);
+  }
 });
 
+/* ===============================
+Stäng banner + spara val
+=============================== */
 
-// Stäng banner
 function closeBanner() {
   cookieBanner.classList.remove("show");
   cookieBanner.classList.add("hide");
+
+  localStorage.setItem("cookiesAccepted", "true");
 }
 
+/* ===============================
+Event listeners
+=============================== */
 
-// Båda knapparna stänger bannern
 acceptBtn.addEventListener("click", closeBanner);
+
 moreBtn.addEventListener("click", closeBanner);
